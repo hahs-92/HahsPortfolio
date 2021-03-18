@@ -1,6 +1,10 @@
+//DEPENDENCIAS
 import React from 'react'
 import { render } from 'react-dom'
 
+//ROUTE
+import App from './routes/App'
+
 const container = document.getElementById('app')
 
-render(<h1>Hola Mundo</h1>, container)
+render(<App />, container)
