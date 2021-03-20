@@ -1,7 +1,13 @@
+//STYLES
+import '../styles/components/Footer.scss'
+
+// _______________________________________________________________
+
+
 const Footer = () => {
     return (
         <footer className='Footer'>
-            <article>
+            <article className='Footer-wrapper'>
                 <h3>Contactame</h3>
 
                 <form action="">

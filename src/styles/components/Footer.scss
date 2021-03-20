@@ -1,0 +1,12 @@
+.Footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: var(--primary-color-base);
+
+    & form {
+        display: flex;
+        flex-direction: column;
+    }
+} 
+

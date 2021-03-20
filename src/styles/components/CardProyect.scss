@@ -1,0 +1,32 @@
+.CardProyect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    padding-bottom: 12px;
+    width: 100%;
+    min-width: 312px;
+    max-width: 380px;
+    background-color: var(--primary-color-base);
+    border-radius: 10px;
+    box-shadow:  var(--shadow1);
+             
+
+    &_img {
+        width: 100%;
+    }
+
+    &_img img {
+        width: 100%;
+    }
+
+    &_text {
+        padding: 0 12px ;
+    }
+
+    & h3, p {
+        padding: 12px 0;
+    }
+
+}

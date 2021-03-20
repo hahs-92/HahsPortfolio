@@ -3,7 +3,8 @@
 
 .Main {
     display: grid;
-    grid-template: 120px 430px minmax(60px, auto) minmax(120px,auto) / minmax(320px, 940px);
+    justify-content: center;
+    grid-template: 120px 430px minmax(60px, auto) minmax(120px,auto) / minmax(320px, 1000px);
     grid-template-areas: "Header"
                          "Hero"
                          "Projects"
@@ -17,15 +18,12 @@
 
 .Hero-wrapper {
     grid-area: Hero;
-    // background-color: green;
 }
 
 .ListProyects {
     grid-area: Projects;
-    background-color: tomato;
 }
 
 Footer {
     grid-area: Footer;
-    background-color: blue;
 }
