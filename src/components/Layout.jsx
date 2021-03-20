@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 //STYLES
+// import '../styles/Globales.scss'
 import '../styles/components/Layout.scss'
 
 // _________________________________________________________________

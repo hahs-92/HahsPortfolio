@@ -9,8 +9,7 @@ import NotFound from '../pages/NotFound'
 //COMPONENTS
 import Layout from '../components/Layout'
 
-//STYLES
-import '../styles/Globales.scss'
+
 
 // ________________________________________________________________________________________
 

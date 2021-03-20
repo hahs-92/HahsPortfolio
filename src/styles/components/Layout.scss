@@ -1,10 +1,14 @@
+@import "/src/styles/_globales";
+
+
 .Main {
     display: grid;
-    grid-template: 200px 250px minmax(60px, auto) 250px / minmax(320px, 940px);
+    grid-template: 120px 430px minmax(60px, auto) minmax(120px,auto) / minmax(320px, 940px);
     grid-template-areas: "Header"
                          "Hero"
                          "Projects"
                          "Footer";
+    row-gap: 12px;
 }
 
 .Header {
@@ -14,7 +18,7 @@
 
 .Hero-wrapper {
     grid-area: Hero;
-    background-color: green;
+    // background-color: green;
 }
 
 .ListProyects {

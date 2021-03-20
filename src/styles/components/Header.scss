@@ -1,0 +1,18 @@
+.Header {
+    display: grid;
+    grid-template: 80px 40px / minmax(320px, auto);
+    grid-template-areas: "Icon"
+                        "Nav";
+}
+
+.Header_icon  {
+    grid-area: Icon;
+    justify-self: center;
+}
+
+.Nav_wrapper {
+    grid-area: Nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
