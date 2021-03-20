@@ -1,41 +1,32 @@
 //COMPONENTS
 import ListProyects from '../components/ListProyects'
 
+//STYLES
+import '../styles/pages/Home.scss'
+
 // _______________________________________________________________________
 
 
 const Home = () => {
     return(
-        <>
-            <h1>Hola Mundo Home</h1>
-            <header>
-                <i>
-                    <img src="" alt="Logo-hahs"/>
-                </i>
-            </header>
-
-            <nav>
-                <ul>
-                    <li>Projectos</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
-
-            <section>
-                <div></div>
-                <div></div>
-                <img src="" alt=""/>
+        <section className='Home'>
+            
+            <section className= 'Hero-wrapper'>
+                <div className='Hero-square-right'></div>
+                <div className='Hero-square-left'></div>
+                <img className='Hero-imagem' src="" alt="picture"/>
                 <h1>Hola, soy Alex Hernández Serrano</h1>
                 <h2>Desarrollador Web Front-end</h2>
-                <button>
+                <button className='Button'>
                     <a href="/resume">Curriculum</a>
                 </button>
             </section>
 
-            <section>
+            <section className='ListProyects'>
                 <ListProyects />
             </section>
-        </>
+
+        </section>
     )
 }
 

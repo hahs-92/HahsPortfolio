@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+:root {
+
+    --font-family: arial;
+    
+    --primary-color-base: #496E96;
+    --primary-color-dark: #2E4D6E;
+    --primary-color-light: #9FC4DF;
+
+    --secundary-color-base: #64C4D7;
+    --secundary-color-dark: #53A4B4;
+    --secundary-color-light: #7FD5E5;
+
+    --black-color: #080D1B;
+    --complementary-color: #BA5319;
+    
+}
+
+body {
+    background-color: var(--primary-color-base);
+    
+}

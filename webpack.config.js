@@ -54,6 +54,18 @@ module.exports = {
           'sass-loader',
         ],
       },
+
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assests/[hash].[ext]'
+            }
+          }
+        ]
+      }
     ],
   },
 
