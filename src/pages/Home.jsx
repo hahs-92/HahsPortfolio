@@ -22,11 +22,11 @@ const Home = () => {
                 </div>
                 <div className='Hero-left'></div>
                 <div className='Hero_text'>
-                        <h1>Hola, soy Alex Hernández Serrano</h1>
-                        <h2>Desarrollador Web Front-end</h2>
-                        <button className='Button'>
+                    <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
+                    <h1>Desarrollador Web Front-end</h1>
+                    <button className='Button'>
                             <a href="/resume">Curriculum</a>
-                        </button>
+                    </button>
                 </div>
             </section>
 
