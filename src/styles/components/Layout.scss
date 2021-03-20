@@ -1,0 +1,28 @@
+.Main {
+    display: grid;
+    grid-template: 200px 250px minmax(60px, auto) 250px / minmax(320px, 940px);
+    grid-template-areas: "Header"
+                         "Hero"
+                         "Projects"
+                         "Footer";
+}
+
+.Header {
+    grid-area: Header;
+    background-color: red;
+}
+
+.Hero-wrapper {
+    grid-area: Hero;
+    background-color: green;
+}
+
+.ListProyects {
+    grid-area: Projects;
+    background-color: tomato;
+}
+
+Footer {
+    grid-area: Footer;
+    background-color: blue;
+}

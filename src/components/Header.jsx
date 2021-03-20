@@ -8,18 +8,18 @@ const Header = () => {
                 <i>
                     <img src={ Logo } alt="Logo-hahs" width= '150' height= '150'/>
                 </i>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
         </>
 
     )

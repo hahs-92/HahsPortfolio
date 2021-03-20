@@ -9,7 +9,7 @@ import '../styles/pages/Home.scss'
 
 const Home = () => {
     return(
-        <section className='Home'>
+        <>
             
             <section className= 'Hero-wrapper'>
                 <div className='Hero-square-right'></div>
@@ -26,7 +26,7 @@ const Home = () => {
                 <ListProyects />
             </section>
 
-        </section>
+        </>
     )
 }
 
