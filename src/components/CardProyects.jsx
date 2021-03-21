@@ -4,6 +4,11 @@ import '../styles/components/CardProyect.scss'
 //ASSETS
 import PlatzaViideo from '../assets/platzi-video.png'
 
+//COMPONENTS
+import Button from  './Button'
+
+// ________________________________________________________________________
+
 
 const CardProyects = () => {
     return (
@@ -22,7 +27,7 @@ const CardProyects = () => {
                 <i></i>
             </div>
 
-            <button>Ver</button>
+            <Button  title= 'Ver proyecto' url='www.youtube.com'/>
         </article>
 
     )

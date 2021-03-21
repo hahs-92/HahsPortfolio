@@ -1,12 +1,59 @@
+.Footer {
+    width: 100%;
+}
+
 .Footer-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    align-items: center;
+    width: 100%;
     background-color: var(--primary-color-base);
+
+    h3 {
+        padding: 12px 0;
+    }
 
     & form {
         display: flex;
         flex-direction: column;
+        padding: 12px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: var(--shadow1);
+
+        & label {
+            padding: 8px 0;
+            font-size: 1.4rem;
+        }
+
+        & input:first-of-type {
+            margin-bottom: 12px;
+            padding: 0 8px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: var(--shadow1);
+        }
+
+        & :last-child {
+            align-self: center;
+        }
+
+        & textarea {
+            margin-bottom: 12px;
+            padding: 0 8px;
+            border-radius: 8px;
+            border:none;
+            box-shadow: var(--shadow1);
+        }
     }
 } 
+
+.icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+}
 

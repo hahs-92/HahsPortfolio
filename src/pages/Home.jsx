@@ -1,3 +1,6 @@
+//DEPENDENCIAS
+import { Link } from 'react-router-dom'
+
 //COMPONENTS
 import ListProyects from '../components/ListProyects'
 
@@ -25,7 +28,7 @@ const Home = () => {
                     <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
                     <h2>Desarrollador Web Front-end</h2>
                     <button className='Button'>
-                            <a href="/resume">Curriculum</a>
+                            <Link to="/resume">Curriculum</Link>
                     </button>
                 </div>
             </section>

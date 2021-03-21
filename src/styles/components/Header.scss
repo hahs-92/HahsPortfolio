@@ -2,7 +2,7 @@
     display: grid;
     grid-template: 80px 40px / minmax(320px, auto);
     grid-template-areas: "Icon"
-                        "Nav";
+                         "Nav";
 }
 
 .Header_icon  {
@@ -15,4 +15,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    & li a {
+        font-size: 1.6rem;
+    }
 }
