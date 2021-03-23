@@ -15,7 +15,7 @@ import Hero from '../assets/image-hero.png'
 
 const Home = () => {
     return(
-        <>
+        <main className= 'Home'>
             
             <section className= 'Hero-wrapper'>
                 <div className='Hero-right'>
@@ -37,7 +37,7 @@ const Home = () => {
                 <ListProyects />
             </section>
 
-        </>
+        </main>
     )
 }
 

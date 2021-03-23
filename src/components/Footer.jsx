@@ -12,13 +12,13 @@ const Footer = () => {
     return (
         <footer className='Footer'>
             <article className='Footer-wrapper'>
-                <h3>Contactame</h3>
+                <h2>Contactame</h2>
 
                 <form action="">
                     <label htmlFor="">Correo Electronico</label>
-                    <input type="email"/>
+                    <input type="email" placeholder='Correo Electronico'/>
                     <label htmlFor="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
                     <input className='Button' type="submit" value='Enviar'/>
                 </form>
                 

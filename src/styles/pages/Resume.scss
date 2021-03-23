@@ -1,0 +1,56 @@
+.Resume {
+    display: grid;
+    grid-template: repeat(3, minmax(100px, auto)) / minmax(320px , 1000px);
+    grid-template-areas: "Hero2"
+                          "Aboutme"
+                          "Info";
+    gap: 20px;
+}
+
+.Hero2-wrapper {
+    grid-area: Hero2;
+    display: grid;
+    grid-template: minmax(20px, auto) minmax(80px, auto) minmax(20px, auto) / repeat(2, minmax(70px, auto)) minmax(180px, auto);
+
+    &_right {
+        grid-area: 1 / 1 / 4 /  3;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        background-color: var(--primary-color-base);
+        box-shadow: var(--shadow1);
+
+        & img {
+            width: 100%;
+            // border: 1px solid black;
+        }
+    }
+
+    &_left {
+        grid-area: 2 / 3 / 4 / 4;
+        padding: 8px;
+        width: 100%;
+        background-color: var(--complementary-color);
+        box-shadow: var(--shadow1);
+
+        & h2, h1 {
+            text-align: center;
+        }
+    }
+
+}
+
+.Aboutme {
+    grid-area: Aboutme;
+    padding: 12px;
+    background-color: var(--primary-color-base);
+    box-shadow: var(--shadow1);
+}
+
+.Info {
+    grid-area: Info;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+

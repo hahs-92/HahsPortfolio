@@ -1,0 +1,18 @@
+.Square {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color-dark);
+    box-shadow: var(--shadow1);
+}
+
+.Circle {
+    @extend .Square;
+    border-radius: 50%;
+}
+
+.--Light {
+    background-color: var(--secundary-color-base);
+}
+
+
+

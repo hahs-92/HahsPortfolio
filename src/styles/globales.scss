@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +8,10 @@
 
 :root {
 
-    --font-family: "Arial";
+    --font-family: 'Roboto', sans-serif;;
     
-    --primary-color-base: #496E96;
+    // --primary-color-base: #496E96;
+    --primary-color-base: #467dba;
     --primary-color-dark: #2E4D6E;
     --primary-color-light: #9FC4DF;
 
@@ -17,18 +20,23 @@
     --secundary-color-light: #7FD5E5;
 
     --black-color: #080D1B;
-    --complementary-color: #BA5319;
+    --background-color:  #f5fafe;
+    // --complementary-color: #BA5319;
+    --complementary-color: #ff2e16;
 
     --shadow1: 5px 8px 12px rgba(0, 0, 0, 0.5);
     
 }
 
+
 html {
+
     font-size: 62.5%;
+    font-family: var(--font-family);
 }
 
 body {
-    background-color: var(--primary-color-dark);
+    background-color: var(--background-color);
 }
 
 a {

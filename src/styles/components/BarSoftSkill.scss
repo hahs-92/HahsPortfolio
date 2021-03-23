@@ -1,0 +1,14 @@
+.BarSoftSkill {
+    width: 100%;
+    display: flex;
+    padding: 12px;
+
+    &_text {
+        width: 40%;
+    }
+    &_items {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+}

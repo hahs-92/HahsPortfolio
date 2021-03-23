@@ -1,11 +1,20 @@
+.Home {
+    display: grid;
+    grid-template: minmax(430px, auto) minmax(60px, auto) / minmax(320px, 1000px);
+    grid-template-areas: "Hero"
+                        "Proyects";
+                        
+}
+
 .Hero-wrapper {
+    grid-area: Hero;
     display: grid;
     grid-template: 40px minmax(150px, auto) minmax(80px, auto)/repeat(2, minmax(104px, auto)) 40px;
+    margin-bottom: 20px;
 }
 
 .Hero-right {
     grid-area: 1 / 2 / 3 / 4;
-    background-color: palevioletred;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -41,8 +50,10 @@
     align-items: center;
     flex-direction: column;
     grid-area: 3 / 1 / 4 / 3;
+    padding: 12px 4px;
 
     & h1 {
+        font-weight: 500;
         text-align: center;
     }
     & h2 {

@@ -1,0 +1,11 @@
+.CardLanguages {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    width: 90%;
+    max-width: 350px;
+    // background-color: var(--primary-color-base);
+    border-radius: 12px;
+    box-shadow: var(--shadow1);
+}
