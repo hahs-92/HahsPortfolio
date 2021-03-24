@@ -5,7 +5,7 @@ import '../styles/components/Button.scss'
 const Button = ({ title, url }) => {
     return(
         <button className='Button'>
-            <a href={ `https://${ url } `} target='_blank'>
+            <a href={ url } target='_blank'>
                 { title }
             </a>
         </button>

@@ -13,20 +13,32 @@
                         "Main"
                         "Footer";
                                               
-    row-gap: 12px;
+    row-gap: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.Main--Light {
+    background-color: var(--background-color);
+    
+    & h1,h2,h3,h4,h5,p,a {
+        color: var(--black-color);
+    }
+}
+
+
+.Main--Dark {
+    background-color: var(--black-color);
+    
+    & h1,h2,h3,h4,h5,p,a,label {
+        color: var(--background-color);
+    }
+    
 }
 
 .Header {
     grid-area: Header;
 }
 
-// .Hero-wrapper {
-//     grid-area: Hero;
-// }
-
-// .ListProyects {
-//     grid-area: Projects;
-// }
 
 .Home {
     grid-area: Main;

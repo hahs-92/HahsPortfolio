@@ -1,3 +1,9 @@
+//DEPENDECIAS
+import { useContext } from 'react'
+
+//CONTEXT
+import AppContext from '../context/AppContext'
+
 //COMPONNETS
 import IconInvision from './IconInvision'
 import IconFigma from './IconFigma'
@@ -10,17 +16,35 @@ import '../styles/components/CardSoftwares.scss'
 // -_________________________________________________________________________________
 
 const CardSoftware = () => {
-    return(
-        <article className='CardSoftwares'>
-            <h2>Programas</h2>
-            <div className='CardSoftwares_wrapper'>
-                <IconInvision />
-                <IconFigma />
-                <IconGit />
-                <IconUnity />
-            </div>
 
-        </article>
+    const { darkMode } = useContext(AppContext)
+
+    return(
+        <>
+            {
+                darkMode
+                    ?
+                    <article className='CardSoftwares  CardSoftwares--dark'>
+                        <h2>Programas</h2>
+                        <div className='CardSoftwares_wrapper'>
+                            <IconInvision />
+                            <IconFigma />
+                            <IconGit />
+                            <IconUnity />
+                        </div>
+                    </article>
+                    :
+                    <article className='CardSoftwares'>
+                        <h2>Programas</h2>
+                        <div className='CardSoftwares_wrapper'>
+                            <IconInvision />
+                            <IconFigma />
+                            <IconGit />
+                            <IconUnity />
+                        </div>
+                    </article>
+            }
+        </>
     )
 }
 

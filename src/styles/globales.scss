@@ -21,10 +21,14 @@
 
     --black-color: #080D1B;
     --background-color:  #f5fafe;
+    --background-color-opacity: #f5fafed6;
+    --background-color-dark: #2e4d6e1c;
+    --background-color-dark-opacity: #2e4d6e75;
     // --complementary-color: #BA5319;
     --complementary-color: #ff2e16;
 
     --shadow1: 5px 8px 12px rgba(0, 0, 0, 0.5);
+    --shadow2: 5px 8px 12px rgba(20, 20, 21, 0.487);
     
 }
 
@@ -35,9 +39,6 @@ html {
     font-family: var(--font-family);
 }
 
-body {
-    background-color: var(--background-color);
-}
 
 a {
     text-decoration: none ;
@@ -47,9 +48,6 @@ li {
     list-style: none;
 }
 
-h1,h2,h3,h4,h5,p,a {
-    color: var(--black-color);
-}
 
 h1 {
     font-size: 2.4rem;

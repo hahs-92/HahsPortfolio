@@ -1,3 +1,9 @@
+//DEPENDECIAAS
+import { useContext } from 'react'
+
+//CONTEXT
+import AppContext from '../context/AppContext'
+
 //COMPONNETS
 import BarSkill from './BarSkill'
 
@@ -14,16 +20,35 @@ import '../styles/components/CardSkills.scss'
 
 
 const CardSkills  = () => {
+
+    const { darkMode } = useContext(AppContext)
+
     return (
-        <article className='CardSkills'>
-            <h2>Habilidades</h2>
-            <BarSkill  Logo={ <IconHtml/> } width='90%'  title="Html"/>
-            <BarSkill  Logo={ <IconCss/> } width='85%'  title="Css"/>
-            <BarSkill  Logo={ <IconJs/> } width='80%'  title="JavaScript"/>
-            <BarSkill Logo={ <IconSass /> } width='75%'  title="Sass" />
-            <BarSkill  Logo={ <IconReact/> } width='70%'  title="React"/>
-            <BarSkill Logo={ <IconWebpack/> } width='70%'  title="Webpack"/>
-        </article>
+        <>
+            {
+                darkMode
+                    ?
+                    <article className='CardSkills CardSkills--dark'>
+                        <h2>Habilidades</h2>
+                        <BarSkill  Logo={ <IconHtml/> } width='90%'  title="Html"/>
+                        <BarSkill  Logo={ <IconCss/> } width='85%'  title="Css"/>
+                        <BarSkill  Logo={ <IconJs/> } width='80%'  title="JavaScript"/>
+                        <BarSkill Logo={ <IconSass /> } width='75%'  title="Sass" />
+                        <BarSkill  Logo={ <IconReact/> } width='70%'  title="React"/>
+                        <BarSkill Logo={ <IconWebpack/> } width='70%'  title="Webpack"/>
+                    </article>
+                    :
+                    <article className='CardSkills'>
+                        <h2>Habilidades</h2>
+                        <BarSkill  Logo={ <IconHtml/> } width='90%'  title="Html"/>
+                        <BarSkill  Logo={ <IconCss/> } width='85%'  title="Css"/>
+                        <BarSkill  Logo={ <IconJs/> } width='80%'  title="JavaScript"/>
+                        <BarSkill Logo={ <IconSass /> } width='75%'  title="Sass" />
+                        <BarSkill  Logo={ <IconReact/> } width='70%'  title="React"/>
+                        <BarSkill Logo={ <IconWebpack/> } width='70%'  title="Webpack"/>
+                </article>
+            }
+        </>
     )
 }
 

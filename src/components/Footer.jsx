@@ -1,38 +1,76 @@
+//DEPENDECIAS
+import { useContext } from 'react'
+
+//CONTEXT
+import AppContext from '../context/AppContext'
+
 //STYLES
 import '../styles/components/Footer.scss'
 
-//ICONS
-import iconFacebook from '../assets/icon-facebook.svg'
-import iconGithub from '../assets/icon-github.svg'
+//ICONSCOMPONENTS
+import IconFacebook from './IconFacebook'
+import IconGithub from './IconGithub'
 
 // _______________________________________________________________
 
 
 const Footer = () => {
+
+    const { darkMode } = useContext(AppContext)
+
     return (
-        <footer className='Footer'>
-            <article className='Footer-wrapper'>
-                <h2>Contactame</h2>
-
-                <form action="">
-                    <label htmlFor="">Correo Electronico</label>
-                    <input type="email" placeholder='Correo Electronico'/>
-                    <label htmlFor="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
-                    <input className='Button' type="submit" value='Enviar'/>
-                </form>
-                
-                <div className='icons-wrapper'>
-                    <i>
-                        <img src={ iconFacebook } alt="Logo-facebook"/>
-                    </i>
-                    <i>
-                        <img src={ iconGithub } alt="Logo-github"/>
-                    </i>
-                </div>
-            </article>
-
-        </footer>
+        <>
+            { 
+                darkMode 
+                    ?   
+                        <footer className="Footer Footer--dark ">
+                            <article className='Footer-wrapper'>
+                                <h2>Contactame</h2>
+            
+                                <form action="">
+                                    <label htmlFor="">Correo Electronico</label>
+                                    <input type="email" placeholder='Correo Electronico'/>
+                                    <label htmlFor="">Mensaje</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
+                                    <input className='Button' type="submit" value='Enviar'/>
+                                </form>
+                                
+                                <div className='icons-wrapper'>
+                                    <a href="https://www.facebook.com" target="_blank" title="facebook">
+                                        <IconFacebook />
+                                    </a>
+                                    <a href="https://www.github.com" target="_blank" title="github">
+                                        <IconGithub />
+                                    </a>
+                                </div>
+                            </article>
+        
+                        </footer>
+                    :
+                        <footer className="Footer">
+                            <article className='Footer-wrapper'>
+                                <h2>Contactame</h2>
+            
+                                <form action="">
+                                    <label htmlFor="">Correo Electronico</label>
+                                    <input type="email" placeholder='Correo Electronico'/>
+                                    <label htmlFor="">Mensaje</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
+                                    <input className='Button' type="submit" value='Enviar'/>
+                                </form>
+                                
+                                <div className='icons-wrapper'>
+                                    <a href="https://www.facebook.com" target="_blank" title="facebook">
+                                        <IconFacebook />
+                                    </a>
+                                    <a href="https://www.github.com" target="_blank" title="github">
+                                        <IconGithub />
+                                    </a>
+                                </div>
+                            </article>
+                        </footer>
+            }
+        </>
     )
 }
 

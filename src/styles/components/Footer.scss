@@ -1,5 +1,6 @@
 .Footer {
     width: 100%;
+    background-color: var(--primary-color-base);
 }
 
 .Footer-wrapper {
@@ -9,8 +10,9 @@
     width: 100%;
     // background-color: var(--primary-color-base);
 
-    h3 {
-        padding: 12px 0;
+    h2 {
+        // padding: 12px 0;
+        max-width: 500px;
     }
 
     & form {
@@ -33,7 +35,7 @@
             border: none;
             border-radius: 8px;
             box-shadow: var(--shadow1);
-            background-color: var(--secundary-color-base);
+            background-color: var(--background-color-opacity);
         }
 
         & :last-child {
@@ -46,7 +48,7 @@
             border-radius: 8px;
             border:none;
             box-shadow: var(--shadow1);
-            background-color: var(--secundary-color-base);
+            background-color: var(--background-color-opacity);
         }
     }
 } 
@@ -57,5 +59,10 @@
     justify-content: space-evenly;
     padding: 20px;
     width: 100%;
+}
+
+//DARKMODE
+.Footer--dark {
+    background-color: var(--background-color-dark-opacity);
 }
 

@@ -3,20 +3,37 @@
     grid-template: 80px 40px / minmax(320px, auto);
     grid-template-areas: "Icon"
                          "Nav";
+    background-color: var(--primary-color-base);
 }
+
 
 .Header_icon  {
     grid-area: Icon;
     justify-self: center;
+    display: flex;
+    align-items: center;
 }
 
-.Nav_wrapper {
-    grid-area: Nav;
+.Nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
 
-    & li a {
-        font-size: 1.6rem;
+    &_wrapper {
+        grid-area: Nav;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    
+        & li a {
+            font-size: 1.6rem;
+        }
     }
 }
+
+
+//DARKMODE
+.Header--dark {
+    background-color: var(--primary-color-dark);
+}
+
