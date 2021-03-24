@@ -26,16 +26,23 @@
         & label {
             padding: 8px 0;
             font-size: 1.4rem;
+            @media (min-width:767px) {
+                font-size: 1.6rem;
+            }
         }
 
         & input:first-of-type {
             margin-bottom: 12px;
             padding: 0 8px;
             height: 40px;
+            font-size: 1.4rem;
             border: none;
             border-radius: 8px;
             box-shadow: var(--shadow1);
             background-color: var(--background-color-opacity);
+            @media (min-width:767px) {
+                font-size: 1.6rem;   
+            }
         }
 
         & :last-child {
@@ -45,10 +52,15 @@
         & textarea {
             margin-bottom: 12px;
             padding: 0 8px;
+            font-size: 1.8rem;
             border-radius: 8px;
             border:none;
             box-shadow: var(--shadow1);
             background-color: var(--background-color-opacity);
+
+            @media (min-width:767px) {
+                font-size: 2rem;   
+            }
         }
     }
 } 
@@ -56,7 +68,7 @@
 .icons-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
     width: 100%;
 }

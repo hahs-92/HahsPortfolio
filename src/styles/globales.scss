@@ -51,11 +51,20 @@ li {
 
 h1 {
     font-size: 2.4rem;
+    @media (min-width:767px) {
+        font-size: 3.6rem;           
+    }
 }
 h2 {
     font-size: 1.8rem;
+    @media (min-width:767px) {
+        font-size: 2.4rem;           
+    }
 }
 
 h3, p {
     font-size: 1.6rem;
+    @media (min-width:767px) {
+        font-size: 1.8rem;           
+    }
 }

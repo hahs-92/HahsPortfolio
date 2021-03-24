@@ -2,13 +2,8 @@
 .Main {
     display: grid;
     justify-content: center;
-    // grid-template: 120px minmax(430px, auto) minmax(60px, auto) minmax(120px,auto) / minmax(320px, 1000px);
-    // grid-template-areas: "Header"
-    //                      "Hero"
-    //                      "Projects"
-    //                      "Footer";
                          
-    grid-template: 120px  minmax(60px, auto) minmax(120px,auto) / minmax(320px, 1000px);
+    grid-template: 120px  minmax(60px, auto) minmax(120px,auto) / 1fr;
     grid-template-areas: "Header"
                         "Main"
                         "Footer";

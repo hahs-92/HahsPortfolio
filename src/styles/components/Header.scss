@@ -4,6 +4,15 @@
     grid-template-areas: "Icon"
                          "Nav";
     background-color: var(--primary-color-base);
+
+    @media (min-width:767px) {
+        grid-template: auto / 180px minmax(320px, auto);
+        grid-template-areas: "Icon Nav";
+    }
+    @media (min-width:1023px) {
+        grid-template: auto / 180px 1fr minmax(520px, auto);
+        grid-template-areas: "Icon Null Nav";
+    }
 }
 
 
@@ -15,6 +24,7 @@
 }
 
 .Nav {
+    grid-area: Nav;
     display: flex;
     align-items: center;
 
@@ -27,6 +37,9 @@
     
         & li a {
             font-size: 1.6rem;
+            @media (min-width:767px) {
+                font-size: 1.8rem;   
+            }
         }
     }
 }
@@ -36,4 +49,5 @@
 .Header--dark {
     background-color: var(--primary-color-dark);
 }
+
 

@@ -1,11 +1,19 @@
 .Resume {
     grid-area: Main;
+    justify-self: center;
     display: grid;
     grid-template: repeat(3, minmax(100px, auto)) / minmax(320px , 1000px);
     grid-template-areas: "Hero2"
                           "Aboutme"
                           "Info";
     gap: 20px;
+
+    @media(min-width: 767px) {
+        grid-template: repeat(2, minmax(100px, auto))/  repeat(2, minmax(320px, 500px));
+        grid-template-areas:
+            "Hero2 Aboutme"
+            "Info Info";
+    }
 }
 
 .Hero2-wrapper {
@@ -29,6 +37,9 @@
 
     &_left {
         grid-area: 2 / 3 / 4 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 8px;
         width: 100%;
         background-color: var(--complementary-color);

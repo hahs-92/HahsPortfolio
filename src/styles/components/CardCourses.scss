@@ -1,6 +1,6 @@
 .CardCourses {
     width: 90%;
-    max-width: 350px;
+    max-width: 355px;
     margin-bottom: 20px;
     padding-bottom: 12px;
     border-radius: 12px;
@@ -12,6 +12,10 @@
 
     h3 {
         padding: 0 12px;
+    }
+
+    @media(min-width: 1023px){
+        max-width: 450px;
     }
 }
 

@@ -31,7 +31,7 @@ const Footer = () => {
                                     <label htmlFor="">Correo Electronico</label>
                                     <input type="email" placeholder='Correo Electronico'/>
                                     <label htmlFor="">Mensaje</label>
-                                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
+                                    <textarea name="" id="" cols="30" rows="5" placeholder='Mensage'></textarea>
                                     <input className='Button' type="submit" value='Enviar'/>
                                 </form>
                                 
@@ -55,7 +55,7 @@ const Footer = () => {
                                     <label htmlFor="">Correo Electronico</label>
                                     <input type="email" placeholder='Correo Electronico'/>
                                     <label htmlFor="">Mensaje</label>
-                                    <textarea name="" id="" cols="30" rows="10" placeholder='Mensage'></textarea>
+                                    <textarea name="" id="" cols="30" rows="5" placeholder='Mensage'></textarea>
                                     <input className='Button' type="submit" value='Enviar'/>
                                 </form>
                                 
