@@ -34,9 +34,15 @@
         background-color: var(--complementary-color);
         box-shadow: var(--shadow1);
 
-        & h2, h1 {
+        h2, h1 {
             text-align: center;
         }
+
+        h2 {
+            padding: 8px ;
+            font-weight: 500;
+        }
+
     }
 
 }
@@ -44,7 +50,7 @@
 .Icon-whatsapp {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .Aboutme {

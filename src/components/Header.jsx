@@ -19,6 +19,7 @@ const Header = () => {
 
     const { darkMode, setDarkMode } = useContext(AppContext)
     const { isHome, setIsHome } = useContext(AppContext)
+
     let theme =''
 
     const handleClick = () => {

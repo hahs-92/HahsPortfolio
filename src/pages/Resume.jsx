@@ -11,13 +11,13 @@ import CardLanguages from '../components/CardLanguages'
 import CardSoftwares from '../components/CardSoftwares'
 import CardHobbies from '../components/CardHobbies'
 import IconWhatsapp from '../components/IconWhatsapp'
+import CardCourses from '../components/CardCourses'
 
 //ASSESTS
 import imageHero from '../assets/Hero2.png'
 
 //STYLES
 import '../styles/pages/Resume.scss'
-import CardSoftware from '../components/CardSoftwares'
 
 // ____________________________________________________________________________________
 
@@ -68,6 +68,7 @@ const Resume = () => {
             <article className='Info'>
                 <CardSkills />
                 <CardSoftSkills />
+                <CardCourses />
                 <CardLanguages />
                 <CardSoftwares />
                 <CardHobbies />

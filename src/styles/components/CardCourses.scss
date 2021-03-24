@@ -1,0 +1,20 @@
+.CardCourses {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: var(--shadow1);
+
+    &_fontweight {
+        font-weight: 400;
+    }
+
+    h3 {
+        padding: 0 12px;
+    }
+}
+
+.CardCourses--dark {
+    background-color: var(--background-color-dark-opacity);
+}
