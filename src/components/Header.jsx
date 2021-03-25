@@ -25,22 +25,18 @@ const Header = () => {
         let local = localStorage.getItem('darkMode','true')
         if(local === 'true'){
             setDarkMode(true)
-            console.log("local is " +local )
         }
         else{
             setDarkMode(false)
-            console.log('local es '+ local)
         }
     },[])
 
     useEffect(()=> {
         if(darkMode) {
             window.localStorage.setItem('darkMode', 'true')
-            console.log('true')
        }
        else {
             window.localStorage.setItem('darkMode', 'false')
-            console.log("falso")
        }
     },[darkMode])
 

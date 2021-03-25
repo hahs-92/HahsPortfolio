@@ -53,17 +53,18 @@ const Resume = () => {
                     ?
                     <article className='Aboutme Aboutme--dark'>
                         <h2>Sobre Mí</h2>
-                        <p>Mi nombre es Alex Hernandez Serrano,
-                            Desarrollador Front-end junior, con conocimientos  en  javaScript , html, css,  y de librerías, preprocesadores (react,sass). Soy una persona responsable y comprometida , me  gusta trabajar en equipo y asumir riesgos, me apasiona aprender nuevas cosas y nunca dejar de aprender. Mi principal objetivo es desarrollar mis habilidades a travez del desarrollo de productos interesantes y apasionantes. Estoy en busqueda de oportunidades que me permitan seguir creciendo como desarrollador y cumplir mis objetivos , asi como aportar valor al sector.</p>
+                        <p>Mi nombre es Alex Hernández Serrano,
+                            entusiasta desarrollador front-end junior.
+                            Tengo conocimientos en html, css, javaScript y react, obtenidos por medio de cursos que he tomado, en su mayoria de forma autodidacta. Soy un apasionado del aprendizaje constante, lo cual me ha permitido adquirir diversos conocimientos, orientados al desarrollo web.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios.He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
                     </article>
                     :
                     <article className='Aboutme'>
                         <h2>Sobre Mí</h2>
-                        <p>Mi nombre es Alex Hernandez Serrano,
-                            Desarrollador Front-end junior, con conocimientos  en  javaScript , html, css,  y de librerías, preprocesadores (react,sass). Soy una persona responsable y comprometida , me  gusta trabajar en equipo y asumir riesgos, me apasiona aprender nuevas cosas y nunca dejar de aprender. Mi principal objetivo es desarrollar mis habilidades a travez del desarrollo de productos interesantes y apasionantes. Estoy en busqueda de oportunidades que me permitan seguir creciendo como desarrollador y cumplir mis objetivos , asi como aportar valor al sector.</p>
+                        <p>Mi nombre es Alex Hernández Serrano,
+                            entusiasta desarrollador front-end junior.
+                            Tengo conocimientos en html, css, javaScript y react, obtenidos por medio de cursos que he tomado, en su mayoria de forma autodidacta. Soy un apasionado del aprendizaje constante, lo cual me ha permitido adquirir diversos conocimientos, orientados al desarrollo web.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios.He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
                     </article>
             }
-
 
             <article className='Info'>
                 <CardSkills />
