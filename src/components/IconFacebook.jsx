@@ -18,7 +18,7 @@ function IconFacebook(props) {
         </g>
         <defs>
           <filter
-            id="prefix__filter0_d"
+            id="prefix__filter0_df"
             x={0}
             y={0}
             width={48}

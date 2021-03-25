@@ -31,14 +31,14 @@ const Home = () => {
             <section className= 'Hero-wrapper'>
                 <div className='Hero-right'>
                     <div className='Hero-right_wrapper'>
-                        <img src={ Hero } alt="picture" />   
+                        <img src={ Hero } alt="picture"  loading='lazy'/>   
                     </div>
                 </div>
                 <div className='Hero-left'></div>
                 <div className='Hero_text'>
                     <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
                     <h2>Desarrollador Web Front-end</h2>
-                    <button className='Button'>
+                    <button className='Button' aria-label='Button para ver el resume'>
                             <Link to="/resume" onClick={ handleClick }>Curriculum</Link>
                     </button>
                 </div>

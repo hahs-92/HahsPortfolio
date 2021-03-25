@@ -24,7 +24,7 @@ const CardProyects = ({ title, description, src, url }) => {
                     ?
                     <article className='CardProyect CardProyect--dark' >
                         <div className='CardProyect_img'>
-                            <img src={ src } alt={ title }/>
+                            <img src={ src } alt={ title } loading='lazy'/>
                         </div>
         
                         <section className='CardProyect_text'>
@@ -41,7 +41,7 @@ const CardProyects = ({ title, description, src, url }) => {
                     :
                     <article className='CardProyect'>
                         <div className='CardProyect_img'>
-                            <img src={ src } alt={ title }/>
+                            <img src={ src } alt={ title } loading='lazy'/>
                         </div>
         
                         <section className='CardProyect_text'>

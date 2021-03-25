@@ -1,11 +1,11 @@
 //ASSEST
-import imgBatabit from './assets/Batabit.png'
-import imgPlatziVideohtml from './assets/platzi-video-html.png'
-import imgPlatziVideoApi from './assets/platzi-video-api.png'
-import imgBlogpost from './assets/BlogPost_blogs.png'
-import imgWebsidecat from './assets/Webside-cat.png'
-import imgPetgram from './assets/petgram.png'
-import imgPlatziConf from './assets/platzi-conf.png'
+import imgBatabit from './assets/Batabit.webp'
+import imgPlatziVideohtml from './assets/platzi-video-html.webp'
+import imgPlatziVideoApi from './assets/platzi-video-api.webp'
+import imgBlogpost from './assets/BlogPost_blogs.webp'
+import imgWebsidecat from './assets/Webside-cat.webp'
+import imgPetgram from './assets/petgram.webp'
+import imgPlatziConf from './assets/platzi-conf.webp'
 
 
 const Info = [

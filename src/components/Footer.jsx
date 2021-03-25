@@ -52,18 +52,18 @@ const Footer = () => {
                                 <h2>Contactame</h2>
             
                                 <form action="">
-                                    <label htmlFor="">Correo Electronico</label>
-                                    <input type="email" placeholder='Correo Electronico'/>
-                                    <label htmlFor="">Mensaje</label>
-                                    <textarea name="" id="" cols="30" rows="5" placeholder='Mensage'></textarea>
+                                    <label htmlFor="email">Correo Electronico</label>
+                                    <input type="email" id='email' placeholder='Correo Electronico'/>
+                                    <label htmlFor="message">Mensaje</label>
+                                    <textarea name="message" id="message" cols="30" rows="5" placeholder='Mensage'></textarea>
                                     <input className='Button' type="submit" value='Enviar'/>
                                 </form>
                                 
                                 <div className='icons-wrapper'>
-                                    <a href="https://www.facebook.com" target="_blank" title="facebook">
+                                    <a href="https://www.facebook.com/alexander.hernandezserrano/" target="_blank" rel='noopener' title="facebook">
                                         <IconFacebook />
                                     </a>
-                                    <a href="https://www.github.com" target="_blank" title="github">
+                                    <a href="https://github.com/hahs-92" target="_blank" rel='noopener' title="github">
                                         <IconGithub />
                                     </a>
                                 </div>

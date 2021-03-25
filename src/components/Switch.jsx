@@ -36,7 +36,7 @@ const Switch = ({ onClick }) => {
                             </span>
                         </button>
                     :
-                        <button className="Switch" onClick={ onClick }>
+                        <button aria-label='switch-dark-mode' className="Switch" onClick={ onClick }>
                             <span >
                                 <svg  width="20" height="20" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 6.42003C18.2652 6.42003 18.5196 6.31468 18.7071 6.12714C18.8946 5.9396 19 5.68525 19 5.42003V1.91003C19 1.64482 18.8946 1.39046 18.7071 1.20293C18.5196 1.01539 18.2652 0.910034 18 0.910034C17.7348 0.910034 17.4804 1.01539 17.2929 1.20293C17.1054 1.39046 17 1.64482 17 1.91003V5.42003C17 5.68525 17.1054 5.9396 17.2929 6.12714C17.4804 6.31468 17.7348 6.42003 18 6.42003Z" fill="black"/>
