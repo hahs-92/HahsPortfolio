@@ -8,11 +8,11 @@ export const useIntersectionObserver = ( element ) => {
     
     useEffect( () => {
         
-        // console.log(element.current)
+        //console.log(element.current)
         const observer = new window.IntersectionObserver( (entries) => {
-            // console.log(entries)
+            //console.log(entries)
             const { isIntersecting } = entries[0]
-            // console.log(isIntersecting);
+            //console.log(isIntersecting);
             if(isIntersecting) {
                 // console.log('si')
                 setShow(true)

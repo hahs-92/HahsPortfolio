@@ -1,7 +1,7 @@
 //DEPENDENCIAS
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 //COMPONENTS
 import IconLogo from './IconLogo'
@@ -21,12 +21,36 @@ const Header = () => {
     const { darkMode, setDarkMode } = useContext(AppContext)
     const { isHome, setIsHome } = useContext(AppContext)
 
+    useEffect(() => {
+        let local = localStorage.getItem('darkMode','true')
+        if(local === 'true'){
+            setDarkMode(true)
+            console.log("local is " +local )
+        }
+        else{
+            setDarkMode(false)
+            console.log('local es '+ local)
+        }
+    },[])
+
+    useEffect(()=> {
+        if(darkMode) {
+            window.localStorage.setItem('darkMode', 'true')
+            console.log('true')
+       }
+       else {
+            window.localStorage.setItem('darkMode', 'false')
+            console.log("falso")
+       }
+    },[darkMode])
+
+
     const handleClick = () => {
         setIsHome(true)
     }
 
     const handleClickButton = () => {
-        setDarkMode(!darkMode)
+       setDarkMode(!darkMode)
     }
 
 
