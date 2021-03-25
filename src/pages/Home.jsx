@@ -44,7 +44,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='ListProyects'>
+            <section className='ListProyects' id='proyects'>
                 <ListProyects />
             </section>
 
