@@ -1,8 +1,11 @@
 //DEPENDECIAS
-import { useContext } from 'react'
+import { useContext, useRef } from 'react'
 
 //CONTEXT
 import AppContext from '../context/AppContext'
+
+//HOOKS
+import { useIntersectionObserver } from '../hooks/useIntersectionBoserver'
 
 //STYLES
 import '../styles/components/CardProyect.scss'
@@ -16,44 +19,47 @@ import Button from  './Button'
 const CardProyects = ({ title, description, src, url }) => {
 
     const { darkMode } = useContext(AppContext)
+    const element = useRef(null)
+    const { show } = useIntersectionObserver(element)
 
     return (
         <>
             {
                 darkMode
                     ?
-                    <article className='CardProyect CardProyect--dark' >
-                        <div className='CardProyect_img'>
-                            <img src={ src } alt={ title } loading='lazy'/>
-                        </div>
-        
-                        <section className='CardProyect_text'>
-                            <h3>{ title }</h3>
-                            <p>{ description }</p>
-                        </section>
-        
-                        {/* <div className='CardProyect_Icons'>
-                            <i></i>
-                        </div> */}
-        
-                        <Button  title= 'Ver proyecto' url={ url }/>
+                    <article className='CardProyect CardProyect--dark' ref= { element } >
+                        {
+                            show &&
+                                <>
+                                    <div className='CardProyect_img'>
+                                        <img src={ src } alt={ title } />
+                                    </div>
+                    
+                                    <section className='CardProyect_text'>
+                                        <h3>{ title }</h3>
+                                        <p>{ description }</p>
+                                    </section>
+                                    <Button  title= 'Ver proyecto' url={ url }/>
+                                </>
+                        }
                     </article>
                     :
-                    <article className='CardProyect'>
-                        <div className='CardProyect_img'>
-                            <img src={ src } alt={ title } loading='lazy'/>
-                        </div>
-        
-                        <section className='CardProyect_text'>
-                            <h3>{ title }</h3>
-                            <p>{ description }</p>
-                        </section>
-        
-                        {/* <div className='CardProyect_Icons'>
-                            <i></i>
-                        </div> */}
-        
-                        <Button  title= 'Ver proyecto' url={ url }/>
+                    <article className='CardProyect' ref= { element }>
+                        {
+                            show &&
+                                <>
+                                    <div className='CardProyect_img'>
+                                        <img src={ src } alt={ title } />
+                                    </div>
+                    
+                                    <section className='CardProyect_text'>
+                                        <h3>{ title }</h3>
+                                        <p>{ description }</p>
+                                    </section>
+                    
+                                    <Button  title= 'Ver proyecto' url={ url }/>
+                                </>
+                        }
                     </article>
             }
            

@@ -16,7 +16,6 @@ const ListProyects= () => {
     return (
         <section className='ListProyects-wrapper'>
             <h2>Proyectos</h2>
-            
             {
                 Info.map((item) => (
                     <CardProyects 
@@ -25,12 +24,10 @@ const ListProyects= () => {
                         description={ item.description } 
                         src={ item.src }  
                         url= { item.url }
-                        />
-                   
+                    />
                 ))
             }
-        </section>
-        
+        </section> 
     )
 }
 
