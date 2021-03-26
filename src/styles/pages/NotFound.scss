@@ -1,0 +1,25 @@
+.NotFound {
+    grid-area: Main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_text {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+
+        a {
+            font-size: 4rem;
+        }
+    }
+
+    &_image {
+        width: 80%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
