@@ -46,7 +46,6 @@ const Footer = () => {
                             <article className='Footer-wrapper'>
                                 <h2>Contactame</h2>
                                 <ContactForm />
-
                                 <div className='icons-wrapper'>
                                     <a href="https://www.facebook.com/alexander.hernandezserrano/" target="_blank" rel='noopener' title="facebook">
                                         <IconFacebook />
@@ -55,6 +54,7 @@ const Footer = () => {
                                         <IconGithub />
                                     </a>
                                 </div>
+
                             </article>
                         </footer>
             }

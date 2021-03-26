@@ -27,20 +27,36 @@ const CardSoftware = () => {
                     <article className='CardSoftwares  CardSoftwares--dark'>
                         <h2>Programas</h2>
                         <div className='CardSoftwares_wrapper'>
+                            <div title='Invision'>
                             <IconInvision />
+                            </div>
+                            <div title='Figma'>
                             <IconFigma />
-                            <IconGit />
-                            <IconUnity />
+                            </div>
+                            <div title='Git'>
+                                <IconGit />
+                            </div>
+                            <div title='Unity'>
+                                <IconUnity />
+                            </div>
                         </div>
                     </article>
                     :
                     <article className='CardSoftwares'>
                         <h2>Programas</h2>
                         <div className='CardSoftwares_wrapper'>
+                        <div title='Invision'>
                             <IconInvision />
+                            </div>
+                            <div title='Figma'>
                             <IconFigma />
-                            <IconGit />
-                            <IconUnity />
+                            </div>
+                            <div title='Git'>
+                                <IconGit />
+                            </div>
+                            <div title='Unity'>
+                                <IconUnity />
+                            </div>
                         </div>
                     </article>
             }

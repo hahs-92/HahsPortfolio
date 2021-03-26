@@ -26,20 +26,36 @@ const CardSoftware = () => {
                     <article className='CardHobbies CardHobbies--dark'>
                         <h2>Intereses</h2>
                         <div className='CardHobbies_wrapper'>
-                            <IconSoccer />
-                            <IconMusic />
-                            <IconGame />
-                            <IconBook />
+                            <div title='Futbol'>
+                                <IconSoccer />
+                            </div>
+                            <div title='Musica'>
+                                <IconMusic />
+                            </div>
+                            <div title='VideoJuegos'>
+                                <IconGame />
+                            </div>
+                            <div title='Leer'>
+                                <IconBook />
+                            </div>
                         </div>
                     </article>
                     :
                     <article className='CardHobbies'>
                         <h2>Intereses</h2>
                         <div className='CardHobbies_wrapper'>
-                            <IconSoccer />
-                            <IconMusic />
-                            <IconGame />
-                            <IconBook />
+                        <div title='Futbol'>
+                                <IconSoccer />
+                            </div>
+                            <div title='Musica'>
+                                <IconMusic />
+                            </div>
+                            <div title='VideoJuegos'>
+                                <IconGame />
+                            </div>
+                            <div title='Leer'>
+                                <IconBook />
+                            </div>
                         </div>
                     </article>
             }
