@@ -19,7 +19,7 @@ import Hero from '../assets/image-hero.png'
 
 const Home = () => {
 
-    const { isHome, setIsHome } = useContext(AppContext)
+    const { setIsHome } = useContext(AppContext)
 
     const handleClick = () => {
         setIsHome(false)

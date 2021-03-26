@@ -21,6 +21,7 @@ const Header = () => {
     const { darkMode, setDarkMode } = useContext(AppContext)
     const { isHome, setIsHome } = useContext(AppContext)
 
+    //USE EFFECTS PARA MANEJAR SI EL USUARIO ESTA EN MODO OSCURO
     useEffect(() => {
         let local = localStorage.getItem('darkMode','true')
         if(local === 'true'){
@@ -32,24 +33,23 @@ const Header = () => {
     },[])
 
     useEffect(()=> {
-        if(darkMode) {
-            window.localStorage.setItem('darkMode', 'true')
-       }
-       else {
-            window.localStorage.setItem('darkMode', 'false')
-       }
+        darkMode ? window.localStorage.setItem('darkMode', 'true') :  window.localStorage.setItem('darkMode', 'false')
     },[darkMode])
 
+    //USEEFFECTS PARA MANEJAR SI EL USUARIO ESTA EN HOME
+    useEffect(() => {
+        let notHome = window.localStorage.getItem('isHome','false')
+        if(notHome === 'false') setIsHome(false)
+    },[])
 
-    const handleClick = () => {
-        setIsHome(true)
-    }
-
-    const handleClickButton = () => {
-       setDarkMode(!darkMode)
-    }
+    useEffect(() => {
+        isHome ? window.localStorage.setItem('isHome', 'true') : window.localStorage.setItem('isHome', 'false')
+    },[isHome])
 
 
+    const handleClick = () => setIsHome(true)
+    const handleClickButton = () => setDarkMode(!darkMode)
+    
     return(
         <>   
             {
@@ -120,7 +120,6 @@ const Header = () => {
             }
 
         </>
-
     )
 }
 
