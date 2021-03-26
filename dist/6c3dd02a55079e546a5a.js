@@ -1,1 +1,0 @@
-import React from"react";import{render}from"react-dom";import{jsx as _jsx}from"react/jsx-runtime";var container=document.getElementById("app");render(_jsx("h1",{children:"Hola Mundo"}),container);

@@ -38,12 +38,12 @@ const Header = () => {
 
     //USEEFFECTS PARA MANEJAR SI EL USUARIO ESTA EN HOME
     useEffect(() => {
-        let notHome = window.localStorage.getItem('isHome','false')
+        let notHome = window.sessionStorage.getItem('isHome','false')
         if(notHome === 'false') setIsHome(false)
     },[])
 
     useEffect(() => {
-        isHome ? window.localStorage.setItem('isHome', 'true') : window.localStorage.setItem('isHome', 'false')
+        isHome ? window.sessionStorage.setItem('isHome', 'true') : window.sessionStorage.setItem('isHome', 'false')
     },[isHome])
 
 

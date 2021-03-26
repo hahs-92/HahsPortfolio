@@ -54,15 +54,13 @@ const Resume = () => {
                     <article className='Aboutme Aboutme--dark'>
                         <h2>Sobre Mí</h2>
                         <p>Mi nombre es Alex Hernández Serrano,
-                            entusiasta desarrollador front-end junior.
-                            Tengo conocimientos en html, css, javaScript y react, obtenidos por medio de cursos que he tomado, en su mayoria de forma autodidacta. Soy un apasionado del aprendizaje constante, lo cual me ha permitido adquirir diversos conocimientos, orientados al desarrollo web.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios.He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
+                            entusiasta desarrollador front-end junior.Soy un apasionado del aprendizaje constante y autodidacta, lo cual me ha permitido adquirir diversos conocimientos, gran parte de ellos orientados al desarrollo web; tales como html, css, javaScript, react, entre otros.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios. He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
                     </article>
                     :
                     <article className='Aboutme'>
                         <h2>Sobre Mí</h2>
                         <p>Mi nombre es Alex Hernández Serrano,
-                            entusiasta desarrollador front-end junior.
-                            Tengo conocimientos en html, css, javaScript y react, obtenidos por medio de cursos que he tomado, en su mayoria de forma autodidacta. Soy un apasionado del aprendizaje constante, lo cual me ha permitido adquirir diversos conocimientos, orientados al desarrollo web.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios.He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
+                            entusiasta desarrollador front-end junior.Soy un apasionado del aprendizaje constante y autodidacta, lo cual me ha permitido adquirir diversos conocimientos, gran parte de ellos orientados al desarrollo web; tales como html, css, javaScript, react, entre otros.Me gusta escribir codigo limpio y claro, así como desarrollar aplicaciones accesibles a todos los usuarios. He construido proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades que permitan seguir mejorando mis habilidades como desarrollador </p>
                     </article>
             }
 
