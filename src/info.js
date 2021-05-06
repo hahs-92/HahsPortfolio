@@ -6,6 +6,7 @@ import imgBlogpost from './assets/BlogPost_blogs.webp'
 import imgWebsidecat from './assets/Webside-cat.webp'
 import imgPetgram from './assets/petgram.webp'
 import imgPlatziConf from './assets/platzi-conf.webp'
+import imgReviewsRestaurants from './assets/reviewsrestaurants.webp'
 
 
 const Info = [
@@ -58,6 +59,13 @@ const Info = [
         src: imgPlatziConf,
         url:'https://platzi-conf-6a553.web.app/'
     },
+    {
+        id: 8,
+        title: 'ReviewRestaurants',
+        description: 'En este proyecto el usuario puede hacer un sencillo login que le permite agregar reseñas a dierentes hoteles, asi como editarla y eliminarlas. Esta pagina fue construida con React.js para la parte del front-end, Node, express y Mongodb para crear el back-end',
+        src: imgReviewsRestaurants,
+        url:'https://reviewsrestaurants-9de6e.web.app/'
+    }
 
 ]
 
