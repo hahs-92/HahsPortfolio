@@ -9,7 +9,7 @@ import imgWebsidecat from './assets/Webside-cat.webp'
 import imgPetgram from './assets/petgram.webp'
 import imgPlatziConf from './assets/platzi-conf.webp'
 import imgReviewsRestaurants from './assets/reviewsrestaurants.webp'
-import imgIpAddress from './assets/ipAddress.webp'
+import imgIpAddress from './assets/ip-address.webp'
 
 
 const Info = [
