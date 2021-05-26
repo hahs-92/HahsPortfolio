@@ -12,11 +12,12 @@ import '../styles/components/CardProyect.scss'
 
 //COMPONENTS
 import Button from  './Button'
+import Tag from './Tag'
 
 // ________________________________________________________________________
 
 
-const CardProyects = ({ title, description, src, url }) => {
+const CardProyects = ({ title, description, src, url, tags }) => {
 
     const { darkMode } = useContext(AppContext)
     const element = useRef(null)
@@ -31,15 +32,30 @@ const CardProyects = ({ title, description, src, url }) => {
                         {
                             show &&
                                 <>
-                                    <div className='CardProyect_img'>
+                                    <section className='CardProyect_img'>
                                         <img src={ src } alt={ title } />
-                                    </div>
+                                    </section>
                     
-                                    <section className='CardProyect_text'>
+                                    <section className='CardProyect_title'>
                                         <h3>{ title }</h3>
+                                    </section>
+
+                                    <section className='CardProyect_tags'>
+                                        {
+                                            tags.map(item => (
+                                                <Tag key={ item } title={ item }/>
+                                            ))
+                                        }
+
+                                    </section>
+
+                                    <section className='CardProyect_description'>
                                         <p>{ description }</p>
                                     </section>
-                                    <Button  title= 'Ver proyecto' url={ url }/>
+
+                                    <section className='CardProyect_button'>
+                                        <Button  title= 'Ver proyecto' url={ url }/>
+                                    </section>
                                 </>
                         }
                     </article>
@@ -48,16 +64,30 @@ const CardProyects = ({ title, description, src, url }) => {
                         {
                             show &&
                                 <>
-                                    <div className='CardProyect_img'>
+                                    <section className='CardProyect_img'>
                                         <img src={ src } alt={ title } />
-                                    </div>
-                    
-                                    <section className='CardProyect_text'>
-                                        <h3>{ title }</h3>
-                                        <p>{ description }</p>
                                     </section>
                     
-                                    <Button  title= 'Ver proyecto' url={ url }/>
+                                    <section className='CardProyect_title'>
+                                        <h3>{ title }</h3>
+                                    </section>
+
+                                    <section className='CardProyect_tags'>
+                                        {
+                                            tags.map(item => (
+                                                <Tag key={ item } title={ item }/>
+                                            ))
+                                        }
+                                    </section>
+
+                                    <section className='CardProyect_description'>
+                                        <p>{ description }</p>
+                                    </section>
+
+                                    <section className='CardProyect_button'>
+                                        <Button  title= 'Ver proyecto' url={ url }/>
+                                    </section>
+                    
                                 </>
                         }
                     </article>

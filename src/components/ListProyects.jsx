@@ -24,6 +24,7 @@ const ListProyects= () => {
                         description={ item.description } 
                         src={ item.src }  
                         url= { item.url }
+                        tags={ item.tags }
                     />
                 ))
             }
