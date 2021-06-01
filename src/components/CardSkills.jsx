@@ -30,12 +30,12 @@ const CardSkills  = () => {
                     ?
                     <article className='CardSkills CardSkills--dark'>
                         <h2>Habilidades</h2>
-                        <BarSkill  Logo={ <IconHtml/> } width='90%'  title="Html"/>
-                        <BarSkill  Logo={ <IconCss/> } width='85%'  title="Css"/>
-                        <BarSkill  Logo={ <IconJs/> } width='80%'  title="JavaScript"/>
-                        <BarSkill Logo={ <IconSass /> } width='75%'  title="Sass" />
-                        <BarSkill  Logo={ <IconReact/> } width='70%'  title="React"/>
-                        <BarSkill Logo={ <IconWebpack/> } width='70%'  title="Webpack"/>
+                        <BarSkill  Logo={ <IconHtml fill='#64C4D7'/> } width='90%'  title="Html"/>
+                        <BarSkill  Logo={ <IconCss fill='#64C4D7'/> } width='85%'  title="Css"/>
+                        <BarSkill  Logo={ <IconJs fill='#64C4D7'/> } width='80%'  title="JavaScript"/>
+                        <BarSkill Logo={ <IconSass fill='#64C4D7'/> } width='70%'  title="Sass" />
+                        <BarSkill  Logo={ <IconReact fill='#64C4D7'/> } width='75%'  title="React"/>
+                        <BarSkill Logo={ <IconWebpack fill='#64C4D7'/> } width='70%'  title="Webpack"/>
                     </article>
                     :
                     <article className='CardSkills'>
@@ -43,8 +43,8 @@ const CardSkills  = () => {
                         <BarSkill  Logo={ <IconHtml/> } width='90%'  title="Html"/>
                         <BarSkill  Logo={ <IconCss/> } width='85%'  title="Css"/>
                         <BarSkill  Logo={ <IconJs/> } width='80%'  title="JavaScript"/>
-                        <BarSkill Logo={ <IconSass /> } width='75%'  title="Sass" />
-                        <BarSkill  Logo={ <IconReact/> } width='70%'  title="React"/>
+                        <BarSkill Logo={ <IconSass /> } width='70%'  title="Sass" />
+                        <BarSkill  Logo={ <IconReact/> } width='75%'  title="React"/>
                         <BarSkill Logo={ <IconWebpack/> } width='70%'  title="Webpack"/>
                 </article>
             }

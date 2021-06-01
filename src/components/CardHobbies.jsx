@@ -27,16 +27,16 @@ const CardSoftware = () => {
                         <h2>Intereses</h2>
                         <div className='CardHobbies_wrapper'>
                             <div title='Futbol'>
-                                <IconSoccer />
+                                <IconSoccer fill='#64C4D7'/>
                             </div>
                             <div title='Musica'>
-                                <IconMusic />
+                                <IconMusic fill='#64C4D7'/>
                             </div>
                             <div title='VideoJuegos'>
-                                <IconGame />
+                                <IconGame fill='#64C4D7'/>
                             </div>
                             <div title='Leer'>
-                                <IconBook />
+                                <IconBook fill='#64C4D7'/>
                             </div>
                         </div>
                     </article>
