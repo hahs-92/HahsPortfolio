@@ -28,6 +28,11 @@
         width: 100%;
         background-color: var(--primary-color-base);
         box-shadow: var(--shadow1);
+        border-top-right-radius: 10%;
+        border-top-left-radius: 55%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        overflow: auto;
 
         & img {
             width: 100%;
@@ -44,6 +49,10 @@
         width: 100%;
         background-color: var(--complementary-color);
         box-shadow: var(--shadow1);
+        border-top-right-radius: 35%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 5%;
+        border-top-left-radius: 10%;
 
         h2, h1 {
             text-align: center;
@@ -69,6 +78,10 @@
     padding: 12px;
     background-color: var(--primary-color-base);
     box-shadow: var(--shadow1);
+    border-top-right-radius: 30%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
 }
 
 .Aboutme--dark {
