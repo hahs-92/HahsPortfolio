@@ -9,6 +9,7 @@ import imgPetgram from './assets/petgram.webp'
 import imgReviewsRestaurants from './assets/reviewsrestaurants.webp'
 import imgIpAddress from './assets/ip-address.webp'
 import imgCountries from './assets/countries-app.webp'
+import imgCalculator from './assets/calculator.webp'
 
 
 const Info = [
@@ -46,14 +47,6 @@ const Info = [
     },
     {
         id: 5,
-        title: 'Platzi video',
-        description: 'Este sitio web permite a los usuarios ver videos en línea y poder agregarlos a su play-list, contiene cuatro paginas, home, login, register y pagina no encontrada, elaboradas usando solo html y css. Esta página esta adaptada para que los usuarios la puedan visualizar desde un desktop y tablet ',
-        src: imgPlatziVideohtml,
-        url:'https://hahs-92.github.io/Platzi-conf/',
-        tags: [ 'HTML', 'CSS', 'JS']
-    },
-    {
-        id: 6,
         title: 'BlogPost',
         description: 'Este Blogpost es una plantilla que permite al usuario publicar sus proyectos destacados de una manera creativa, para su maquetación se utilizo html, y css para los estilos, ademas se utilizaron breakpoints para hacer la pagina web responsive, permitiendo a los usuarios, visualizarla desde cualquier dispositivo',
         src: imgBlogpost,
@@ -61,7 +54,7 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS']
     },
     {
-        id: 7,
+        id: 6,
         title: 'Webside E-comerce',
         description: 'Front-end de una E-commerce website para la compra de geniales cajas de gatitos, esta construida unicamente usando html semantico y css. Es una pagina web responsive, es decir se puede visualizar desde cualquier resolución y se adaptara a cada una de ellas',
         src: imgWebsidecat,
@@ -69,7 +62,7 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS']
     },
     {
-        id: 8,
+        id: 7,
         title: 'Petgram',
         description: 'Maquetación de una aplicación para ver y subir fotos de mascotas desde dispositivos mobiles. En su elaboración se utilizó React y Sass como preprocesador de css. Ademas se mejoró el SEO de la aplicación  con react Helmet, y con la ayuda de Webpack se comprimio los archivos utilizados para mejorar el rendimiento , ',
         src: imgPetgram,
@@ -77,7 +70,7 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS']
     },
     {
-        id: 9,
+        id: 8,
         title: 'ReviewRestaurants',
         description: 'En este proyecto el usuario puede hacer un sencillo login que le permite agregar reseñas a dierentes hoteles, asi como editarla y eliminarlas. Esta pagina fue construida con React.js para la parte del front-end, Node, express y Mongodb para crear el back-end',
         src: imgReviewsRestaurants,
@@ -85,13 +78,21 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS', 'API']
     },
     {
-        id: 10,
+        id: 9,
         title: 'IP Address Tracker',
         description: 'Este sitio web permite al usuario ver renderizada su dirección al momento de iniciar la aplicación, ademas puede buscar por ip address y dominio. Esta construida usando Html, css, javaScript; y se utilizaron dos Apis(IP Geolocation API by IPify y LeafletJS.',
         src: imgIpAddress,
         url:'https://hahs-92.github.io/IPTracker/',
         tags: [ 'HTML', 'CSS', 'JS', 'API']
-    }
+    },
+    {
+        id: 10,
+        title: 'Calculator App',
+        description: 'Calculator app es una aplicación que permite a los usuarios realizar las operaciones matematicas basicas, ademas pueden elegir entre tres temas diferentes. Esta pagina web se adapta a diferentes resoluciones. Esta construida con React, css y desplegada con firebase ',
+        src: imgCalculator,
+        url:'https://calculatorhahs.web.app/',
+        tags: [ 'REACT', 'CSS', 'JS']
+    },
 
 ]
 
