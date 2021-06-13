@@ -2,14 +2,13 @@
 import imgDashboard from './assets/dashboard.webp'
 import imgJobList from './assets/jobList.webp'
 import imgBatabit from './assets/Batabit.webp'
-import imgPlatziVideohtml from './assets/platzi-video-html.webp'
 import imgBlogpost from './assets/BlogPost_blogs.webp'
 import imgWebsidecat from './assets/Webside-cat.webp'
 import imgPetgram from './assets/petgram.webp'
-import imgReviewsRestaurants from './assets/reviewsrestaurants.webp'
 import imgIpAddress from './assets/ip-address.webp'
 import imgCountries from './assets/countries-app.webp'
 import imgCalculator from './assets/calculator.webp'
+import imgWeatherApp from './assets/weather-app.webp'
 
 
 const Info = [
@@ -71,10 +70,10 @@ const Info = [
     },
     {
         id: 8,
-        title: 'ReviewRestaurants',
-        description: 'En este proyecto el usuario puede hacer un sencillo login que le permite agregar reseñas a dierentes hoteles, asi como editarla y eliminarlas. Esta pagina fue construida con React.js para la parte del front-end, Node, express y Mongodb para crear el back-end',
-        src: imgReviewsRestaurants,
-        url:'https://reviewsrestaurants-9de6e.web.app/',
+        title: 'Weather App',
+        description: 'Weather App es un sitio web que permite a los usuarios conocer las principales medidas metereologicas de las principales ciudades del mundo. Este proyecto fue elaborado utilizando React, para obtener los datos del clima se utilizo la Api publica  metaweather. ',
+        src: imgWeatherApp,
+        url:'https://weather-app-gilt-eta.vercel.app/',
         tags: [ 'REACT', 'CSS', 'JS', 'API']
     },
     {
