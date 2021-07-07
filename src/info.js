@@ -2,13 +2,13 @@
 import imgDashboard from './assets/dashboard.webp'
 import imgJobList from './assets/jobList.webp'
 import imgBatabit from './assets/Batabit.webp'
-import imgBlogpost from './assets/BlogPost_blogs.webp'
 import imgWebsidecat from './assets/Webside-cat.webp'
 import imgPetgram from './assets/petgram.webp'
 import imgIpAddress from './assets/ip-address.webp'
 import imgCountries from './assets/countries-app.webp'
 import imgCalculator from './assets/calculator.webp'
 import imgWeatherApp from './assets/weather-app.webp'
+import imgPokedex from './assets/pokedex.webp'
 
 
 const Info = [
@@ -46,14 +46,6 @@ const Info = [
     },
     {
         id: 5,
-        title: 'BlogPost',
-        description: 'Este Blogpost es una plantilla que permite al usuario publicar sus proyectos destacados de una manera creativa, para su maquetación se utilizo html, y css para los estilos, ademas se utilizaron breakpoints para hacer la pagina web responsive, permitiendo a los usuarios, visualizarla desde cualquier dispositivo',
-        src: imgBlogpost,
-        url:'https://hahs-92.github.io/BlogPost/',
-        tags: [ 'HTML', 'CSS', 'JS']
-    },
-    {
-        id: 6,
         title: 'Webside E-comerce',
         description: 'Front-end de una E-commerce website para la compra de geniales cajas de gatitos, esta construida unicamente usando html semantico y css. Es una pagina web responsive, es decir se puede visualizar desde cualquier resolución y se adaptara a cada una de ellas',
         src: imgWebsidecat,
@@ -61,7 +53,7 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS']
     },
     {
-        id: 7,
+        id: 6,
         title: 'Petgram',
         description: 'Maquetación de una aplicación para ver y subir fotos de mascotas desde dispositivos mobiles. En su elaboración se utilizó React y Sass como preprocesador de css. Ademas se mejoró el SEO de la aplicación  con react Helmet, y con la ayuda de Webpack se comprimio los archivos utilizados para mejorar el rendimiento , ',
         src: imgPetgram,
@@ -69,7 +61,7 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS']
     },
     {
-        id: 8,
+        id: 7,
         title: 'Weather App',
         description: 'Weather App es un sitio web que permite a los usuarios conocer las principales medidas metereologicas de las principales ciudades del mundo. Este proyecto fue elaborado utilizando React, para obtener los datos del clima se utilizo la Api publica  metaweather. ',
         src: imgWeatherApp,
@@ -77,7 +69,7 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS', 'API']
     },
     {
-        id: 9,
+        id: 8,
         title: 'IP Address Tracker',
         description: 'Este sitio web permite al usuario ver renderizada su dirección al momento de iniciar la aplicación, ademas puede buscar por ip address y dominio. Esta construida usando Html, css, javaScript; y se utilizaron dos Apis(IP Geolocation API by IPify y LeafletJS.',
         src: imgIpAddress,
@@ -85,13 +77,21 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS', 'API']
     },
     {
-        id: 10,
+        id: 9,
         title: 'Calculator App',
         description: 'Calculator app es una aplicación que permite a los usuarios realizar las operaciones matematicas basicas, ademas pueden elegir entre tres temas diferentes. Esta pagina web se adapta a diferentes resoluciones. Esta construida con React, css y desplegada con firebase ',
         src: imgCalculator,
         url:'https://calculatorhahs.web.app/',
         tags: [ 'REACT', 'CSS', 'JS']
     },
+    {
+        id: 10,
+        title: 'Pokedex App',
+        description: 'Sitio web que muestra una lista completa de todos los pokemons existentes. Ademas el usuario puede obtener información detallada de cada pokemon y la posibilidad de buscar a su pokemom preferido. Esta construida usando React y los datos se obtienen de la API de pokemon.  ',
+        src: imgPokedex,
+        url:'https://pokedex-eta-bay.vercel.app/',
+        tags: [ 'REACT', 'CSS', 'JS', 'API']
+    }
 
 ]
 

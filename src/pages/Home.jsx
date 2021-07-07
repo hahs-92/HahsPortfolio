@@ -19,7 +19,7 @@ import Hero from '../assets/image-hero.png'
 
 const Home = () => {
 
-    const { setIsHome } = useContext(AppContext)
+    const { setIsHome, darkMode } = useContext(AppContext)
 
     const handleClick = () => {
         setIsHome(false)
@@ -38,7 +38,7 @@ const Home = () => {
                 <div className='Hero_text'>
                     <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
                     <h2>Desarrollador Web Front-end</h2>
-                    <button className='Button' aria-label='Button para ver el resume'>
+                    <button className={ darkMode ? 'Button' : `Button Button--Dark`} aria-label='Button para ver el resume'>
                             <Link to="/resume" onClick={ handleClick }>Curriculum</Link>
                     </button>
                 </div>

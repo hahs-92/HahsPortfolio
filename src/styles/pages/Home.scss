@@ -4,7 +4,7 @@
     grid-template: minmax(430px, auto) minmax(60px, auto) / minmax(320px, 1000px);
     grid-template-areas: "Hero"
                         "Proyects";
-    justify-content: center;
+    justify-content: center; 
                         
 }
 
@@ -45,7 +45,6 @@
         width: 100%;
         max-width: 250px;
         height: 100%;
-        // border: 1px solid black;
         transform: translateX(-25%);
         object-fit: cover;
     }

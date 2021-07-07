@@ -1,15 +1,11 @@
 //DEPENDECIAS
 import { useContext, useRef } from 'react'
-
 //CONTEXT
 import AppContext from '../context/AppContext'
-
 //HOOKS
 import { useIntersectionObserver } from '../hooks/useIntersectionBoserver'
-
 //STYLES
 import '../styles/components/CardProyect.scss'
-
 //COMPONENTS
 import Button from  './Button'
 import Tag from './Tag'

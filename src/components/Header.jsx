@@ -1,5 +1,5 @@
 //DEPENDENCIAS
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { useContext, useEffect } from 'react'
 
@@ -17,6 +17,7 @@ import '../styles/components/Header.scss'
 
 
 const Header = () => {
+    let history = useHistory()
 
     const { darkMode, setDarkMode } = useContext(AppContext)
     const { isHome, setIsHome } = useContext(AppContext)
@@ -49,6 +50,7 @@ const Header = () => {
 
     const handleClick = () => setIsHome(true)
     const handleClickButton = () => setDarkMode(!darkMode)
+    const handleHome = () => history.push('/')
     
     return(
         <>   
@@ -56,7 +58,7 @@ const Header = () => {
                 darkMode
                     ?
                     <header className="Header Header--dark">
-                        <div className="Header_icon" >
+                        <div className="Header_icon" onClick={ handleHome } >
                             <IconLogo/>
                         </div>
                         <nav className='Nav'>
