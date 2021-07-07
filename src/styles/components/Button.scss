@@ -1,8 +1,8 @@
 .Button {
     margin-bottom: 12px;
     padding: 8px;
-    width: 100px;
-    min-width: 200px;
+    width: 100%;
+    max-width: 150px;
     height: 50px;
     font-size: 1.6rem;
     background-color: var(--primary-color-dark);
@@ -21,4 +21,9 @@
 
 .Button--Dark {
     background-color: var(--secundary-color-base);
+}
+
+.Button--complementary {
+    background-color: var(--complementary-color);
+    color: var(--background-color);
 }

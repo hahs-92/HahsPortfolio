@@ -5,12 +5,13 @@ import '../styles/components/Button.scss'
 import AppContext from '../context/AppContext'
 
 
-const Button = ({ title, url }) => {
+const Button = ({ title, url, theme }) => {
 
     const { darkMode } = useContext(AppContext)
+    const themeComplementary = theme ? 'Button--complementary' : ''
 
     return(
-        <button className={ darkMode ? 'Button' : `Button Button--Dark`} >
+        <button className={ darkMode ? `Button ${ themeComplementary }` : `Button ${ themeComplementary } Button--Dark`} >
             <a href={ url } target='_blank' rel='noopener'>
                 { title }
             </a>

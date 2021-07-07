@@ -13,7 +13,7 @@ import Tag from './Tag'
 // ________________________________________________________________________
 
 
-const CardProyects = ({ title, description, src, url, tags }) => {
+const CardProyects = ({ title, description, src, url, tags, urlCode }) => {
 
     const { darkMode } = useContext(AppContext)
     const element = useRef(null)
@@ -50,6 +50,7 @@ const CardProyects = ({ title, description, src, url, tags }) => {
                                     </section>
 
                                     <section className='CardProyect_button'>
+                                        <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
                                         <Button  title= 'Ver proyecto' url={ url }/>
                                     </section>
                                 </>
@@ -81,6 +82,7 @@ const CardProyects = ({ title, description, src, url, tags }) => {
                                     </section>
 
                                     <section className='CardProyect_button'>
+                                        <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
                                         <Button  title= 'Ver proyecto' url={ url }/>
                                     </section>
                     
