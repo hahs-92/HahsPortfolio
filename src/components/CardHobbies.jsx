@@ -1,15 +1,12 @@
 //DEPENDECIAS
 import { useContext } from 'react'
-
 //CONTEXT
 import AppContext from '../context/AppContext'
-
 //COMPONNETS
 import IconSoccer from './IconSoccer'
 import IconMusic from './IconMusic'
 import IconGame from './IconGame'
 import IconBook from './IconBook'
-
 //STYLES
 import '../styles/components/CardHobbies.scss'
 
@@ -24,16 +21,16 @@ const CardSoftware = () => {
             <h2>Intereses</h2>
             <div className='CardHobbies_wrapper'>
                 <div title='Futbol'>
-                    <IconSoccer fill='#64C4D7'/>
+                    { darkMode ? <IconSoccer fill='#64C4D7'/> : <IconSoccer />}
                 </div>
                 <div title='Musica'>
-                    <IconMusic fill='#64C4D7'/>
+                    { darkMode ? <IconMusic fill='#64C4D7'/> : <IconMusic />}
                 </div>
                 <div title='VideoJuegos'>
-                    <IconGame fill='#64C4D7'/>
+                    { darkMode ? <IconGame fill='#64C4D7'/> : <IconGame />}
                 </div>
                 <div title='Leer'>
-                    <IconBook fill='#64C4D7'/>
+                    { darkMode ? <IconBook fill='#64C4D7'/> : <IconBook />}
                 </div>
             </div>
         </article>

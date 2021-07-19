@@ -12,7 +12,6 @@ import Tag from './Tag'
 
 // ________________________________________________________________________
 
-
 const CardProyects = ({ title, description, src, url, tags, urlCode }) => {
 
     const { darkMode } = useContext(AppContext)
@@ -20,79 +19,38 @@ const CardProyects = ({ title, description, src, url, tags, urlCode }) => {
     const { show } = useIntersectionObserver(element)
 
     return (
-        <>
-            {
-                darkMode
-                    ?
-                    <article className='CardProyect CardProyect--dark' ref= { element } >
-                        {
-                            show &&
-                                <>
-                                    <section className='CardProyect_img'>
-                                        <img src={ src } alt={ title } />
-                                    </section>
-                    
-                                    <section className='CardProyect_title'>
-                                        <h3>{ title }</h3>
-                                    </section>
+            <article className={ darkMode ? 'CardProyect CardProyect--dark' : 'CardProyect'} ref= { element } >
+                {
+                    show &&
+                        <>
+                            <section className='CardProyect_img'>
+                                <img src={ src } alt={ title } />
+                            </section>
+            
+                            <section className='CardProyect_title'>
+                                <h3>{ title }</h3>
+                            </section>
 
-                                    <section className='CardProyect_tags'>
-                                        {
-                                            tags.map(item => (
-                                                <Tag key={ item } title={ item }/>
-                                            ))
-                                        }
+                            <section className='CardProyect_tags'>
+                                {
+                                    tags.map(item => (
+                                        <Tag key={ item } title={ item }/>
+                                    ))
+                                }
 
-                                    </section>
+                            </section>
 
-                                    <section className='CardProyect_description'>
-                                        <p>{ description }</p>
-                                    </section>
+                            <section className='CardProyect_description'>
+                                <p>{ description }</p>
+                            </section>
 
-                                    <section className='CardProyect_button'>
-                                        <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
-                                        <Button  title= 'Ver proyecto' url={ url }/>
-                                    </section>
-                                </>
-                        }
-                    </article>
-                    :
-                    <article className='CardProyect' ref= { element }>
-                        {
-                            show &&
-                                <>
-                                    <section className='CardProyect_img'>
-                                        <img src={ src } alt={ title } />
-                                    </section>
-                    
-                                    <section className='CardProyect_title'>
-                                        <h3>{ title }</h3>
-                                    </section>
-
-                                    <section className='CardProyect_tags'>
-                                        {
-                                            tags.map(item => (
-                                                <Tag key={ item } title={ item }/>
-                                            ))
-                                        }
-                                    </section>
-
-                                    <section className='CardProyect_description'>
-                                        <p>{ description }</p>
-                                    </section>
-
-                                    <section className='CardProyect_button'>
-                                        <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
-                                        <Button  title= 'Ver proyecto' url={ url }/>
-                                    </section>
-                    
-                                </>
-                        }
-                    </article>
-            }
-           
-        </>
-
+                            <section className='CardProyect_button'>
+                                <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
+                                <Button  title= 'Ver proyecto' url={ url }/>
+                            </section>
+                        </>
+                }
+            </article>
     )
 }
 
