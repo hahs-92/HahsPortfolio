@@ -7,7 +7,7 @@ import { useIntersectionObserver } from '../hooks/useIntersectionBoserver'
 //STYLES
 import '../styles/components/CardProyect.scss'
 //COMPONENTS
-import Button from  './Button'
+import Button from  './Anchor'
 import Tag from './Tag'
 
 // ________________________________________________________________________

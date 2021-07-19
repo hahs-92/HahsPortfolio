@@ -1,16 +1,12 @@
 //DEPENDENCIAS
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
-
 //COMPONENTS
 import ListProyects from '../components/ListProyects'
-
 //CONTEXT
 import AppContext from '../context/AppContext'
-
 //STYLES
 import '../styles/pages/Home.scss'
-
 //IMAGES
 import Hero from '../assets/image-hero.png'
 
@@ -20,9 +16,11 @@ import Hero from '../assets/image-hero.png'
 const Home = () => {
 
     const { setIsHome, darkMode } = useContext(AppContext)
+    let history = useHistory()
 
     const handleClick = () => {
         setIsHome(false)
+        history.push('/resume')
     }
 
     return(
@@ -38,8 +36,11 @@ const Home = () => {
                 <div className='Hero_text'>
                     <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
                     <h2>Desarrollador Web Front-end</h2>
-                    <button className={ darkMode ? 'Button' : `Button Button--Dark`} aria-label='Button para ver el resume'>
-                            <Link to="/resume" onClick={ handleClick }>Curriculum</Link>
+                     <button 
+                        className={ darkMode ? 'Button Button--Dark' : `Button`} aria-label='Button para ver el resume'
+                        onClick={ handleClick }    
+                    >
+                        Resume
                     </button>
                 </div>
             </section>
