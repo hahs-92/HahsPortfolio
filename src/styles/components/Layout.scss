@@ -2,11 +2,11 @@
 .Main {
     display: grid;
     justify-content: center;
-                         
-    grid-template: 120px  minmax(60px, auto) minmax(120px,auto) / 1fr;
-    grid-template-areas: "Header"
-                        "Main"
-                        "Footer";
+    grid-template: 120px minmax(60px, auto) /1fr;
+    grid-template-areas:
+        "Header"
+        "Main";
+    min-height: 100vh;
                                               
     row-gap: 20px;
     transition: all .3s ease-in-out;

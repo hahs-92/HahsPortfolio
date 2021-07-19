@@ -1,8 +1,6 @@
 //DEPENDENCIAS
 import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
-//COMPONENTS
-import ListProyects from '../components/ListProyects'
 //CONTEXT
 import AppContext from '../context/AppContext'
 //STYLES
@@ -44,11 +42,6 @@ const Home = () => {
                     </button>
                 </div>
             </section>
-
-            <section className='ListProyects' id='proyects'>
-                <ListProyects />
-            </section>
-
         </main>
     )
 }

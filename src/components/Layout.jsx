@@ -28,13 +28,13 @@ const Layout = ( { children } ) => {
                     <section className="Main Main--Dark">
                         <Header/>
                         { children }
-                        <Footer/>
+                        {/* <Footer/> */}
                     </section>
                     :
                     <section className="Main Main--Light">
                         <Header/>
                         { children }
-                        <Footer/>
+                        {/* <Footer/> */}
                     </section>    
             }
 

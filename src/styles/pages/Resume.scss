@@ -47,7 +47,6 @@
         justify-content: center;
         padding: 8px;
         width: 100%;
-        background-color: var(--complementary-color);
         box-shadow: var(--shadow1);
         border-top-right-radius: 35%;
         border-bottom-left-radius: 30%;
@@ -75,6 +74,9 @@
 
 .Aboutme {
     grid-area: Aboutme;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 12px;
     background-color: var(--primary-color-base);
     box-shadow: var(--shadow1);

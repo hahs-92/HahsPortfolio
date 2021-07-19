@@ -1,9 +1,7 @@
 //COMPONENTS
 import CardProyects from './CardProyects'
-
 //STYLES
 import '../styles/components/ListProyects.scss'
-
 //INFO
 import Info from '../info.js'
 

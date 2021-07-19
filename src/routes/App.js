@@ -9,7 +9,8 @@ import AppContext from '../context/AppContext'
 import Home from '../pages/Home'
 import Resume from '../pages/Resume'
 import NotFound from '../pages/NotFound'
-
+import Projects from '../pages/Projects'
+import Contact from '../pages/Contact'
 //COMPONENTS
 import Layout from '../components/Layout'
 
@@ -30,6 +31,8 @@ const App = () => {
                         
                         <Route exact path='/' component={ Home } />
                         <Route exact path='/resume' component= { Resume } />
+                        <Route exact path='/projects' component={ Projects } />
+                        <Route exact path='/contact' component={ Contact } />
                         <Route component={ NotFound } />
                         
                     </Switch>

@@ -1,15 +1,11 @@
 //DEPENDENCIAS
 import { Link, useHistory } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
 import { useContext, useEffect } from 'react'
-
 //COMPONENTS
 import IconLogo from './IconLogo'
 import Switch from './Switch'
-
 //CONTEXT
 import AppContext from '../context/AppContext'
-
 //STYLES
 import '../styles/components/Header.scss'
 
@@ -20,7 +16,6 @@ const Header = () => {
     let history = useHistory()
 
     const { darkMode, setDarkMode } = useContext(AppContext)
-    const { isHome, setIsHome } = useContext(AppContext)
 
     //USE EFFECTS PARA MANEJAR SI EL USUARIO ESTA EN MODO OSCURO
     useEffect(() => {
@@ -37,91 +32,33 @@ const Header = () => {
         darkMode ? window.localStorage.setItem('darkMode', 'true') :  window.localStorage.setItem('darkMode', 'false')
     },[darkMode])
 
-    //USEEFFECTS PARA MANEJAR SI EL USUARIO ESTA EN HOME
-    useEffect(() => {
-        let notHome = window.sessionStorage.getItem('isHome','false')
-        if(notHome === 'false') setIsHome(false)
-    },[])
 
-    useEffect(() => {
-        isHome ? window.sessionStorage.setItem('isHome', 'true') : window.sessionStorage.setItem('isHome', 'false')
-    },[isHome])
-
-
-    const handleClick = () => setIsHome(true)
     const handleClickButton = () => setDarkMode(!darkMode)
     const handleHome = () => history.push('/')
     
-    return(
-        <>   
-            {
-                darkMode
-                    ?
-                    <header className="Header Header--dark">
+    return(   
+        <header className={ darkMode ? "Header Header--dark" : "Header"}>
                         <div className="Header_icon" onClick={ handleHome } >
                             <IconLogo/>
                         </div>
                         <nav className='Nav'>
                             <ul className='Nav_wrapper'>
                                 
-                                {
-                                    isHome
-                                        ? 
-                                        <li>
-                                            <HashLink to="#proyects">Proyectos</HashLink>
-                                        </li>
-                                        :
-                                        <li>
-                                            <Link to="/" onClick={ handleClick }>Inicio</Link>
-                                        </li>           
-                                }
-
                                 <li>
-                                    <HashLink to="#contact">Contacto</HashLink>
+                                    <Link to="/" >Inicio</Link>
+                                </li>           
+                                <li>
+                                    <Link to="/projects">Proyectos</Link>
                                 </li>
-
                                 <li>
-                                    {/* <button onClick={ handleClickButton }>Dark</button> */}
+                                    <Link to="/contact">Contacto</Link>
+                                </li>
+                                <li>
                                     <Switch onClick={ handleClickButton } />
                                 </li> 
                             </ul>
                         </nav>
                     </header>
-                    
-                    :
-                    <header className= "Header"  >
-                        <div className="Header_icon" >
-                            <IconLogo/>
-                        </div>
-                        <nav className='Nav'>
-                            <ul className='Nav_wrapper'>
-                                
-                                {
-                                    isHome
-                                        ? 
-                                        <li>
-                                            <HashLink to="#proyects">Proyectos</HashLink>
-                                        </li>
-                                        :
-                                        <li>
-                                            <Link to="/" onClick={ handleClick }>Inicio</Link>
-                                        </li>           
-                                }
-        
-                                <li>
-                                    <HashLink to="#contact">Contacto</HashLink>
-                                </li>
-        
-                                <li>
-                                    {/* <button onClick={ handleClickButton }>Dark</button> */}
-                                    <Switch onClick={ handleClickButton } />
-                                </li> 
-                            </ul>
-                        </nav>
-                    </header>
-            }
-
-        </>
     )
 }
 
