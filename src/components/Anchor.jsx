@@ -12,7 +12,7 @@ const Button = ({ title, url, theme }) => {
 
     return(
         <a     
-            className={ darkMode ? `Anchor ${ themeComplementary }` : `Anchor ${ themeComplementary } Anchor--Dark`}
+            className={ darkMode ?  `Anchor ${ themeComplementary } Anchor--Dark` : `Anchor ${ themeComplementary }` }
             href={ url } target='_blank' rel='noopener'
         >
             { title }

@@ -14,7 +14,7 @@ import IconWhatsapp from '../components/IconWhatsapp'
 import CardCourses from '../components/CardCourses'
 
 //ASSESTS
-import imageHero from '../assets/Hero2.png'
+import imageHero from '../assets/image-hero.png'
 
 //STYLES
 import '../styles/pages/Resume.scss'
@@ -29,19 +29,18 @@ const Resume = () => {
     return(
         <section className='Resume'>
             <article className='Hero2-wrapper'>  
-                <div className='Hero2-wrapper_right'>
+                <div className={darkMode ? 'Hero2-wrapper_right --dark' : 'Hero2-wrapper_right'}>
                     <img src={ imageHero } alt="image-hero"/>   
                 </div>
                 
                 <div className='Hero2-wrapper_left'>
                     <h1>Alex Hernández Serrano</h1>
-                    <h2>Desarollador Web Front-end</h2>
+                    <h2>Front-end Web Developer</h2>
                     <div className="Icon-whatsapp">
                         <IconWhatsapp />
                         <h3>321 9357540</h3>
                     </div>
                 </div>
-
                 {/* <div className='Hero2-wrapper_text'>
                     <h1>Alex Hernández Serrano</h1>
                     <h2>Desarollador Web Front-end</h2>
@@ -52,15 +51,15 @@ const Resume = () => {
                 darkMode
                     ?
                     <article className='Aboutme Aboutme--dark'>
-                        <h2>Sobre mi</h2>
-                        <p>Mi nombre es Alex Hernández Serrano, me encanta la programación, el futbol y los video juegos. Soy 
-                            entusiasta desarrollador front-end junior apasionado del aprendizaje constante y autodidacta, lo cual me ha permitido adquirir diversos conocimientos, gran parte de ellos orientados al desarrollo web; tales como html, css, javaScript, react, entre otros.Me gusta desarrollar aplicaciones geniales y accesibles a todos los usuarios. He construido varios proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades laborales, donde pueda trabajar en equipo en la construcción de aplicaciones web, para seguir mejorando mis habilidades como desarrollador </p>
+                        <h2>About me</h2>
+                        <p>My name is Alex Hernández Serrano. I am an enthusiast
+                        dev. I love programming, soccer, and video games. I have bits of knowledge in Front-end technologies, such as HTML, CSS, JavaScript, TypeScript, React, and some knowledge in Back-end technologies such as Node.js and MongoDB. I have built several projects with this stack; you can find some of them on my portfolio.</p>
                     </article>
                     :
                     <article className='Aboutme'>
                         <h2>Sobre Mí</h2>
-                        <p>Mi nombre es Alex Hernández Serrano, me encanta la programación, el futbol y los video juegos. Soy 
-                            entusiasta desarrollador front-end junior apasionado del aprendizaje constante y autodidacta, lo cual me ha permitido adquirir diversos conocimientos, gran parte de ellos orientados al desarrollo web; tales como html, css, javaScript, react, entre otros.Me gusta desarrollar aplicaciones geniales y accesibles a todos los usuarios. He construido varios proyectos donde he puesto en practica mis conocimientos y estoy en busca de oportunidades laborales, donde pueda trabajar en equipo en la construcción de aplicaciones web, para seguir mejorando mis habilidades como desarrollador </p>
+                        <p>My name is Alex Hernández Serrano. I am an enthusiast
+                        dev. I love programming, soccer, and video games. I have bits of knowledge in Front-end technologies, such as HTML, CSS, JavaScript, TypeScript, React, and some knowledge in Back-end technologies such as Node.js and MongoDB. I have built several projects with this stack; you can find some of them on my portfolio.</p>
                     </article>
             }
 

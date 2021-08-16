@@ -4,10 +4,9 @@
     align-self: center;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    max-width: 1000px;
-    min-height: 80vh;
-                        
+    justify-content: center;
+    width: 100%; 
+    max-width: 1000px;  
 }
 
 .Hero-wrapper {
@@ -15,32 +14,21 @@
     display: grid;
     grid-template: 40px minmax(150px, auto) minmax(80px, auto)/repeat(2, minmax(104px, auto)) 40px;
     gap: 0px 20px;
-    margin-bottom: 20px;
-    padding: 4%;
-    height: 100%;
-    max-height: 620px;
-
-    @media (min-width: 767px) {
-        padding: 0;
-    }
-    @media (min-width: 1023px) {
-        grid-template: 39px minmax(150px, auto) minmax(30px, auto)/ 1fr minmax(auto, 320px) 40px;
-    }
+    width: 100%;
 }
 
 .Hero-right {
-    grid-area: 1 / 2 / 3 / 4;
-    z-index: 10;
+    grid-area: 1 / 1 / 3 / 4;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color-base);
-    box-shadow: var(--shadow1);
-    border-bottom-right-radius: 50%;
+    border-top: 1px solid solid;
+    border-right: 1px solid gray;
+    border-top-right-radius: 95%;
     border-top-left-radius: 15%;
-    border-top-right-radius: 5%;
+    border-bottom-right-radius: 0%;
     border-bottom-left-radius: 5%;
 }
 
@@ -56,8 +44,11 @@
 }
 
 .Hero-left {
-    grid-area: 2 / 1 / 4 / 3;
-    box-shadow: var(--shadow1);
+    grid-area: 2 / 1 / 4 / 4;
+    width: 100%;
+    justify-self: center;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 5%;
     border-top-left-radius: 25%;
@@ -65,12 +56,13 @@
 }
 
 .Hero_text {
+    justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: 3 / 1 / 4 / 3;
-    padding: 12px;
+    grid-area: 3 / 1 / 4 / 4;
+    width: 90%;
 
     & h1 {
         font-weight: 500;
@@ -89,12 +81,12 @@
         max-width: 150px;
         height: 50px;
         font-size: 1.6rem;
-        background-color: var(--primary-color-base);
+        background-color: #0070f3;
         border: none;
         border-radius: 8px;
-        box-shadow: var(--shadow1);
         outline: none;
         cursor: pointer;
+        color: #fff;
         @media (min-width:767px) {
             font-size: 1.8rem;    
         }
@@ -108,10 +100,5 @@
         color: var(--secundary-color-light);
     }
 
-    
-
-    @media (min-width: 1023px) {
-        grid-area: 2/1/3/2;
-    }
 }
 

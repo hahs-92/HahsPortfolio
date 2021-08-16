@@ -3,8 +3,7 @@
     grid-template: 80px 40px / minmax(320px, auto);
     grid-template-areas: "Icon"
                          "Nav";
-    background-color: var(--primary-color-base);
-    box-shadow: var(--shadow1);
+    border-bottom: 0.5px solid #cac6c6;                    
 
     @media (min-width:767px) {
         grid-template: auto / 180px minmax(320px, auto);
@@ -15,7 +14,6 @@
         grid-template-areas: "Icon Null Nav";
     }
 }
-
 
 .Header_icon  {
     grid-area: Icon;
@@ -49,7 +47,7 @@
 
 //DARKMODE
 .Header--dark {
-    background-color: var(--primary-color-dark);
+    border: none;
 }
 
 

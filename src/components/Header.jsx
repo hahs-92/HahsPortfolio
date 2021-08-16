@@ -45,13 +45,13 @@ const Header = () => {
                             <ul className='Nav_wrapper'>
                                 
                                 <li>
-                                    <Link to="/" >Inicio</Link>
+                                    <Link to="/" >Home</Link>
                                 </li>           
                                 <li>
-                                    <Link to="/projects">Proyectos</Link>
+                                    <Link to="/projects">Projects</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Contacto</Link>
+                                    <Link to="/contact">Contact</Link>
                                 </li>
                                 <li>
                                     <Switch onClick={ handleClickButton } />

@@ -3,73 +3,73 @@ import imgDashboard from './assets/dashboard.webp'
 import imgJobList from './assets/jobList.webp'
 import imgBatabit from './assets/Batabit.webp'
 import imgWebsidecat from './assets/Webside-cat.webp'
-import imgPetgram from './assets/petgram.webp'
 import imgIpAddress from './assets/ip-address.webp'
 import imgCountries from './assets/countries-app.webp'
 import imgCalculator from './assets/calculator.webp'
 import imgWeatherApp from './assets/weather-app.webp'
 import imgPokedex from './assets/pokedex.webp'
+import imgTrivia from './assets/trivia-app-rho.vercel.app_.webp'
 
 
 const Info = [
     {
         id: 1,
+        title: 'Trivia App',
+        description: 'The Trivia app is a web page where you can also play and learn about different topics; you can choose between three difficulties: easy, medium, and hard. This page was built with React, Typescript, and redux.',
+        src: imgTrivia,
+        url:'https://trivia-app-rho.vercel.app/',
+        urlCode: 'https://github.com/hahs-92/trivia-app',
+        tags: [ 'REACT', 'TS', 'API']
+    },
+    {
+        id: 2,
         title: 'Countries App ',
-        description: 'Pagina web que permite a los usuarios visualizar una lista de paises, ademas de poder utilizar diferentes filtros para buscar un pais en especifico. Tambien puede obtener mas detalles de cada pais al hacer click sobre el. Para su desarrollo se utilizo React y la información de los paises se obtiene  de una Api publica',
+        description: 'On this web page, you can watch a list of different countries which show you information about them such as, their flag, borders and coins . This project has built with React and modules css.',
         src: imgCountries,
         url:'https://countries-app-bc12f.web.app/',
         urlCode: 'https://github.com/hahs-92/countries-app',
         tags: [ 'REACT', 'CSS', 'JS','API']
     },
     {
-        id: 2,
+        id: 3,
         title: 'Job Listings ',
-        description: 'Este sitio web permite a los usuarios visualizar una lista de trabajos, y poder filtrarlos por una serie de parametros, los cuales puede elegir dependiendo de sus necesidades. Ademas este se adapta a diferentes resoluciones. Para su construcción se utilizo React y css modules y para su despliegue se utilizo firebase y github actions.',
+        description: 'On this site web, you can watch job listings about web development. Also, you can filter them for tags. This web page was built with React and modules CSS, and it was deployed on firebase.',
         src: imgJobList,
         url:'https://jobslist-7ad13.web.app/',
         urlCode: 'https://github.com/hahs-92/JobListFilter',
         tags: [ 'REACT', 'CSS', 'JS']
     },
     {
-        id: 3,
+        id: 4,
         title: 'Social media dashboard',
-        description: 'Dashboard es la maquetación de un panel de redes sociales con el selector de temas. El usuario puede elegir entre el tema oscuro y claro. Los usuarios pueden visualizar esta pagina en diferentes resoluciones, desde un dispositivo mobil hasta un desktop. El aplicativo fue desarrollado usando React y desplegado en firebase',
+        description: 'On this social media dashboard, you can choose between two themes: light, and dark. You can watch it at different resolutions, such as on your mobile or laptop. This project was built with React, modules CSS',
         src: imgDashboard,
         url:'https://panelsocialmedia-9f70b.web.app/',
         urlCode: 'https://github.com/hahs-92/PanelSocialMedia',
         tags: [ 'REACT', 'CSS', 'JS']
     },
     {
-        id: 4,
+        id: 5,
         title: 'Batabit',
-        description: 'Batabit es una pagina web que facilita la comercialización de Bitcoins para todo tipo de usuario. En este proyecto se realizo la landing page, en la cual los usuarios podrán ver las diferentes ofertas; en su elaboración se utilizo html y css . Se aplico la metodología de Mobile-first para su maquetación, y posteriormente se adapto a diferentes resoluciones. ',
+        description: 'The Batabit is a landing page that shows you different offers about crypto coins. You can watch it on your mobile or laptop because it is adaptative to them. It was built with HTML, CSS.',
         src: imgBatabit,
         url:'https://hahs-92.github.io/Batabit/index',
         urlCode: 'https://github.com/hahs-92/Batabit',
         tags: [ 'HTML', 'CSS']
     },
     {
-        id: 5,
+        id: 6,
         title: 'Webside E-comerce',
-        description: 'Front-end de una E-commerce website para la compra de geniales cajas de gatitos, esta construida unicamente usando html semantico y css. Es una pagina web responsive, es decir se puede visualizar desde cualquier resolución y se adaptara a cada una de ellas',
+        description: 'This web page is an E-commerce, that you can watch amazing boxes of cats. Also, you can watch it on differents dispositive. This page was developed with HTML, CSS, and Javascript.',
         src: imgWebsidecat,
         url:'https://hahs-92.github.io/Proyect.webside-cat/',
         urlCode: 'https://github.com/hahs-92/Proyect.webside-cat',
         tags: [ 'HTML', 'CSS', 'JS']
     },
     {
-        id: 6,
-        title: 'Petgram',
-        description: 'Maquetación de una aplicación para ver y subir fotos de mascotas desde dispositivos mobiles. En su elaboración se utilizó React y Sass como preprocesador de css. Ademas se mejoró el SEO de la aplicación  con react Helmet, y con la ayuda de Webpack se comprimio los archivos utilizados para mejorar el rendimiento , ',
-        src: imgPetgram,
-        url:'https://petgram-hahs.vercel.app/',
-        urlCode: 'https://github.com/hahs-92/Platzi-conf-react',
-        tags: [ 'REACT', 'CSS', 'JS']
-    },
-    {
         id: 7,
         title: 'Weather App',
-        description: 'Weather App es un sitio web que permite a los usuarios conocer las principales medidas metereologicas de las principales ciudades del mundo. Este proyecto fue elaborado utilizando React, para obtener los datos del clima se utilizo la Api publica  metaweather. ',
+        description: 'The Weather App is a web page where you can know the main meteorological rates of the principal cities in the world. This page was built with React. The data was gotten on the public API metaweather.',
         src: imgWeatherApp,
         url:'https://weather-app-gilt-eta.vercel.app/',
         urlCode: 'https://github.com/hahs-92/weatherApp',
@@ -78,7 +78,7 @@ const Info = [
     {
         id: 8,
         title: 'IP Address Tracker',
-        description: 'Este sitio web permite al usuario ver renderizada su dirección al momento de iniciar la aplicación, ademas puede buscar por ip address y dominio. Esta construida usando Html, css, javaScript; y se utilizaron dos Apis(IP Geolocation API by IPify y LeafletJS.',
+        description: 'On this web page, you can watch your IP address. Also, you can look for other addresses that you want. This project uses two APIS: Geolocation API by IPify and LeafletJS.',
         src: imgIpAddress,
         url:'https://hahs-92.github.io/IPTracker/',
         urlCode: 'https://github.com/hahs-92/IPTracker',
@@ -87,7 +87,7 @@ const Info = [
     {
         id: 9,
         title: 'Calculator App',
-        description: 'Calculator app es una aplicación que permite a los usuarios realizar las operaciones matematicas basicas, ademas pueden elegir entre tres temas diferentes. Esta pagina web se adapta a diferentes resoluciones. Esta construida con React, css y desplegada con firebase ',
+        description: 'This web page lets you make basic math operations, and you can choose between three different themes. This page you can watch on your phone or your laptop. It was built with React, modules CSS.',
         src: imgCalculator,
         url:'https://calculatorhahs.web.app/',
         urlCode: 'https://github.com/hahs-92/calculator-app',
@@ -97,6 +97,8 @@ const Info = [
         id: 10,
         title: 'Pokedex App',
         description: 'Sitio web que muestra una lista completa de todos los pokemons existentes. Ademas el usuario puede obtener información detallada de cada pokemon y la posibilidad de buscar a su pokemom preferido. Esta construida usando React y los datos se obtienen de la API de pokemon.  ',
+        src: imgPokedex,
+        description: 'On this page, you can watch an existing pokemons list. Also, you can watch the information about each pokemon, such as the pokemon names, abilities, and types.',
         src: imgPokedex,
         url:'https://pokedex-eta-bay.vercel.app/',
         urlCode: 'https://github.com/hahs-92/pokedex',

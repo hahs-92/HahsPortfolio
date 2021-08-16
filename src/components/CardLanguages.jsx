@@ -17,9 +17,10 @@ const CardLanguages = () => {
 
     return (
         <article className={ darkMode ? 'CardLanguages CardLanguages--dark' : 'CardLanguages'}>
-            <h2>Idiomas</h2>
-            <BarSoftSkill  title="Español" count="5" shape="Circle"/>
-            <BarSoftSkill  title="Ingles" count="4" shape="Circle"/>
+            <h2>languages</h2>
+            <BarSoftSkill  title="Spanish" count="5" shape="Circle"/>
+            <BarSoftSkill  title="English" count="4" shape="Circle"/>
+            <BarSoftSkill  title="French" count="1" shape="Circle"/>
         </article>
     )
 }

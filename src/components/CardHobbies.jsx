@@ -18,7 +18,7 @@ const CardSoftware = () => {
     return(
         
         <article className={ darkMode ? 'CardHobbies CardHobbies--dark' : 'CardHobbies'}>
-            <h2>Intereses</h2>
+            <h2>Hobbies</h2>
             <div className='CardHobbies_wrapper'>
                 <div title='Futbol'>
                     { darkMode ? <IconSoccer fill='#64C4D7'/> : <IconSoccer />}

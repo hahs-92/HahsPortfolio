@@ -4,7 +4,6 @@
     cursor: pointer;
     border:none;
     border-radius: 1000px;
-    background-color: #343d5b;
     outline: none;
 
     &::after {
@@ -23,10 +22,7 @@
     }
 
     &.active {
-        background-color: orange;
         &::after {
-            // right: 0;
-            // left: unset;
             transform: translateX(20px);
         }
 

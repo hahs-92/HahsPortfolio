@@ -20,15 +20,15 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={ sendEmail } className="ContactForm">
-            <label htmlFor="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre" required/>
-            <label htmlFor="email">Correo Electronico</label>
-            <input type="email" placeholder='Correo Electronico' id="email" name="email" required/>
-            <label htmlFor="subject">Asunto</label>
-            <input type="text" name="subject" id="subject" placeholder="Asunto"/>
-            <label htmlFor="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder='Mensage' required/>
-            <input className='Button' type="submit" value='Enviar'/>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+            <label htmlFor="email">Email</label>
+            <input type="email" placeholder='Email' id="email" name="email" required/>
+            <label htmlFor="subject">subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Subject"/>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder='Message' required/>
+            <input className='Button' type="submit" value='Contact me¡'/>
         </form>
 
     )

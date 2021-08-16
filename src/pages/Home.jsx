@@ -26,14 +26,14 @@ const Home = () => {
             
             <section className= 'Hero-wrapper'>
                 <div className='Hero-right'>
-                    <div className='Hero-right_wrapper'>
+                    {/* <div className='Hero-right_wrapper'>
                         <img src={ Hero } alt="picture"  loading='lazy'/>   
-                    </div>
+                    </div> */}
                 </div>
                 <div className='Hero-left'></div>
                 <div className='Hero_text'>
-                    <h1>Hola, soy<strong> Alex Hernández Serrano</strong></h1>
-                    <h2>Desarrollador Web Front-end</h2>
+                    <h1>Hi, I am <strong> Alex Hernández Serrano</strong></h1>
+                    <h2>Front-end Web Developer</h2>
                      <button 
                         className={ darkMode ? 'Button Button--Dark' : `Button`} aria-label='Button para ver el resume'
                         onClick={ handleClick }    

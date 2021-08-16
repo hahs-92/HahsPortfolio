@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,10 +8,13 @@
 }
 
 :root {
-
-    --font-family: 'Roboto', sans-serif;;
+    // --font-family: 'Roboto', sans-serif;;
+    --font-family: 'Montserrat', sans-serif;
     
-    // --primary-color-base: #496E96;
+    --BG-color: #fafafa;
+    --primary-color: #0070f3;
+    --complementary-color: #e00025;
+
     --primary-color-base: #467dba;
     --primary-color-dark: #2E4D6E;
     --primary-color-light: #9FC4DF;
@@ -24,12 +28,8 @@
     --background-color-opacity: #f5fafed6;
     --background-color-dark: #2e4d6e1c;
     --background-color-dark-opacity: #2e4d6e75;
-    // --complementary-color: #BA5319;
-    --complementary-color: #B71C1C;
 
-    --shadow1: 5px 8px 12px rgba(0, 0, 0, 0.3);
-    --shadow2: 5px 8px 12px rgba(20, 20, 21, 0.487);
-    
+    --shadow1: 3px 6px 4px 1px #ebe9e9;
 }
 
 

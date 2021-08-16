@@ -1,8 +1,9 @@
 .CardProyect {
     display: grid;
     gap: 8px;
-    grid-template: 200px 30px 30px minmax(100px, auto) 70px / minmax(90%, 380px);
+    grid-template: 200px 30px 30px minmax(100px, auto) 70px / minmax(280px, 380px);
     margin: 20px 0px;
+    width: 95%;  
     border-radius: 10px;
     box-shadow:  var(--shadow1);
     overflow: hidden;
@@ -42,6 +43,10 @@
         width: 100%;
     }
 
+    @media (min-width:399px) {
+        width: unset;        
+    }
+
 }
 
  // ________________________________________________________________
@@ -49,5 +54,5 @@
 
 .CardProyect--dark {
     background-color: var(--background-color-dark-opacity);
-    box-shadow: var(--shadow2);
+    box-shadow: none;
 }

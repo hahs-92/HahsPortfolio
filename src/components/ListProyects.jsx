@@ -13,7 +13,7 @@ const ListProyects= () => {
 
     return (
         <section className='ListProyects-wrapper'>
-            <h2>Proyectos</h2>
+            <h2>My projects</h2>
             {
                 Info.map((item) => (
                     <CardProyects 

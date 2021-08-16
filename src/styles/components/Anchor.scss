@@ -7,7 +7,9 @@
     max-width: 150px;
     height: 50px;
     font-size: 1.6rem;
-    background-color: var(--primary-color-dark);
+    // background-color: var(--primary-color-dark);
+    background-color: #0070f3;
+    color: #fff;
     border: none;
     border-radius: 8px;
     box-shadow: var(--shadow1);
@@ -23,10 +25,11 @@
 }
 
 .Anchor--Dark {
-    background-color: var(--secundary-color-base);
+    // background-color: var(--secundary-color-base);
+    box-shadow: none;
 }
 
 .Anchor--complementary {
     background-color: var(--complementary-color);
-    color: var(--background-color);
+    color: #fff;
 }

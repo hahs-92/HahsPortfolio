@@ -15,13 +15,13 @@ const CardSoftSkills = () => {
     const { darkMode } = useContext(AppContext)
 
     return (
-        <article className={ darkMode ? 'CardSoftSkills CardSkills--dark' : 'CardSoftSkills'}>   
-                <h2>Habilidades Blandas</h2>
-                <BarSoftSkill  title="Responsabilidad" count="5" shape="Square"/>
-                <BarSoftSkill  title="Trabajo en equipo" count="4" shape="Square"/>
-                <BarSoftSkill  title="Creatividad" count="4" shape="Square"/>
-                <BarSoftSkill  title="Adaptabilidad" count="4" shape="Square"/>
-                <BarSoftSkill  title="Liderazgo" count="4" shape="Square"/>
+        <article className={ darkMode ? 'CardSoftSkills CardSoftSkills--dark' : 'CardSoftSkills'}>   
+                <h2>Soft Skills</h2>
+                <BarSoftSkill  title="Responsability" count="5" shape="Square"/>
+                <BarSoftSkill  title="Teamwork" count="4" shape="Square"/>
+                <BarSoftSkill  title="Creativity" count="4" shape="Square"/>
+                <BarSoftSkill  title="Adaptability" count="4" shape="Square"/>
+                <BarSoftSkill  title="Leadership" count="4" shape="Square"/>
         </article>
     )
 }

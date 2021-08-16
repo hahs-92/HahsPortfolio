@@ -9,19 +9,17 @@ import IconInvision from './IconInvision'
 import IconFigma from './IconFigma'
 import IconGit from './IconGit'
 import IconUnity from './IconUnity'
-
 //STYLES
 import '../styles/components/CardSoftwares.scss'
 
 // -_________________________________________________________________________________
 
 const CardSoftware = () => {
-
     const { darkMode } = useContext(AppContext)
 
     return(
         <article className={ darkMode ? 'CardSoftwares  CardSoftwares--dark' : 'CardSoftwares' }>
-            <h2>Programas</h2>
+            <h2>Software</h2>
             <div className='CardSoftwares_wrapper'>
                 <div title='Invision'>
                     { darkMode ? <IconInvision fill='#64C4D7'/> : <IconInvision />}

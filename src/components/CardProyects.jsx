@@ -45,8 +45,8 @@ const CardProyects = ({ title, description, src, url, tags, urlCode }) => {
                             </section>
 
                             <section className='CardProyect_button'>
-                                <Button  title= 'Codigo' url={ urlCode } theme={ true }/>
-                                <Button  title= 'Ver proyecto' url={ url }/>
+                                <Button  title= 'Code' url={ urlCode } theme={ true }/>
+                                <Button  title= 'Go there¡' url={ url }/>
                             </section>
                         </>
                 }

@@ -18,25 +18,31 @@
 
 .Hero2-wrapper {
     grid-area: Hero2;
+    justify-self: center;
     display: grid;
     grid-template: minmax(20px, auto) minmax(80px, auto) minmax(20px, auto) / repeat(2, minmax(70px, auto)) minmax(180px, auto);
+    max-width: 600px;
 
     &_right {
         grid-area: 1 / 1 / 3 /  3;
         display: flex;
         align-items: flex-end;
+        max-width: 300px;
+        max-height: 300px;
+        justify-content: center;
         width: 100%;
-        background-color: var(--primary-color-base);
         box-shadow: var(--shadow1);
+        border: 1px solid gray;
         border-top-right-radius: 10%;
         border-top-left-radius: 55%;
         border-bottom-left-radius: 10%;
         border-bottom-right-radius: 10%;
-        overflow: auto;
+        overflow: visible;
 
         & img {
             width: 100%;
-            // border: 1px solid black;
+            max-width: 250px;
+            object-fit: cover;
         }
     }
 
@@ -47,7 +53,6 @@
         justify-content: center;
         padding: 8px;
         width: 100%;
-        box-shadow: var(--shadow1);
         border-top-right-radius: 35%;
         border-bottom-left-radius: 30%;
         border-bottom-right-radius: 5%;
@@ -74,20 +79,17 @@
 
 .Aboutme {
     grid-area: Aboutme;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 12px;
-    background-color: var(--primary-color-base);
+    max-width: 600px;
     box-shadow: var(--shadow1);
     border-top-right-radius: 30%;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 20%;
-}
-
-.Aboutme--dark {
-    background-color: var(--background-color-dark-opacity);
 }
 
 .Info {
@@ -96,4 +98,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.--dark {
+    box-shadow: none;
+}
+
+.Aboutme--dark {
+    box-shadow: none;
+}
+
 

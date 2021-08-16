@@ -11,7 +11,6 @@ const BarSoftSkill = ({ title, count, shape }) => {
             <div className='BarSoftSkill_text'>
                 <h3>{ title }</h3>
             </div>
-
             {
                 (count == 5  )
                     &&
@@ -23,7 +22,6 @@ const BarSoftSkill = ({ title, count, shape }) => {
                         <Item element="" shape= { shape }/>
                     </div>    
             }
-
             {
                 (count == 4 )
                     &&
@@ -35,7 +33,6 @@ const BarSoftSkill = ({ title, count, shape }) => {
                         <Item element="Light" shape= { shape }/>
                     </div>    
             }
-
             {
                 (count == 3 )
                     &&
@@ -47,9 +44,29 @@ const BarSoftSkill = ({ title, count, shape }) => {
                         <Item element="Light" shape= { shape }/>
                     </div>    
             }
-
+            {
+                (count == 2 )
+                    &&
+                    <div className='BarSoftSkill_items'>
+                        <Item element="" shape= { shape }/>
+                        <Item element="" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                    </div>    
+            }
+            {
+                (count == 1 )
+                    &&
+                    <div className='BarSoftSkill_items'>
+                        <Item element="" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                        <Item element="Light" shape= { shape }/>
+                    </div>    
+            }
         </div>
-
     )
 }
 
