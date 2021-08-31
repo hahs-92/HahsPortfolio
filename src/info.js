@@ -1,7 +1,6 @@
 //ASSEST
 import imgDashboard from './assets/dashboard.webp'
 import imgJobList from './assets/jobList.webp'
-import imgBatabit from './assets/Batabit.webp'
 import imgWebsidecat from './assets/Webside-cat.webp'
 import imgIpAddress from './assets/ip-address.webp'
 import imgCountries from './assets/countries-app.webp'
@@ -9,6 +8,7 @@ import imgCalculator from './assets/calculator.webp'
 import imgWeatherApp from './assets/weather-app.webp'
 import imgPokedex from './assets/pokedex.webp'
 import imgTrivia from './assets/trivia-app-rho.vercel.app_.webp'
+import imgRickAndMorty from './assets/rick-and-morty.webp'
 
 
 const Info = [
@@ -50,15 +50,6 @@ const Info = [
     },
     {
         id: 5,
-        title: 'Batabit',
-        description: 'The Batabit is a landing page that shows you different offers about crypto coins. You can watch it on your mobile or laptop because it is adaptative to them. It was built with HTML, CSS.',
-        src: imgBatabit,
-        url:'https://hahs-92.github.io/Batabit/index',
-        urlCode: 'https://github.com/hahs-92/Batabit',
-        tags: [ 'HTML', 'CSS']
-    },
-    {
-        id: 6,
         title: 'Webside E-comerce',
         description: 'This web page is an E-commerce, that you can watch amazing boxes of cats. Also, you can watch it on differents dispositive. This page was developed with HTML, CSS, and Javascript.',
         src: imgWebsidecat,
@@ -67,7 +58,7 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS']
     },
     {
-        id: 7,
+        id: 6,
         title: 'Weather App',
         description: 'The Weather App is a web page where you can know the main meteorological rates of the principal cities in the world. This page was built with React. The data was gotten on the public API metaweather.',
         src: imgWeatherApp,
@@ -76,7 +67,7 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS', 'API']
     },
     {
-        id: 8,
+        id: 7,
         title: 'IP Address Tracker',
         description: 'On this web page, you can watch your IP address. Also, you can look for other addresses that you want. This project uses two APIS: Geolocation API by IPify and LeafletJS.',
         src: imgIpAddress,
@@ -85,7 +76,7 @@ const Info = [
         tags: [ 'HTML', 'CSS', 'JS', 'API']
     },
     {
-        id: 9,
+        id: 8,
         title: 'Calculator App',
         description: 'This web page lets you make basic math operations, and you can choose between three different themes. This page you can watch on your phone or your laptop. It was built with React, modules CSS.',
         src: imgCalculator,
@@ -94,16 +85,24 @@ const Info = [
         tags: [ 'REACT', 'CSS', 'JS']
     },
     {
-        id: 10,
+        id: 9,
         title: 'Pokedex App',
-        description: 'Sitio web que muestra una lista completa de todos los pokemons existentes. Ademas el usuario puede obtener información detallada de cada pokemon y la posibilidad de buscar a su pokemom preferido. Esta construida usando React y los datos se obtienen de la API de pokemon.  ',
         src: imgPokedex,
         description: 'On this page, you can watch an existing pokemons list. Also, you can watch the information about each pokemon, such as the pokemon names, abilities, and types.',
         src: imgPokedex,
         url:'https://pokedex-eta-bay.vercel.app/',
         urlCode: 'https://github.com/hahs-92/pokedex',
         tags: [ 'REACT', 'CSS', 'JS', 'API']
-    }
+    },
+    {
+        id: 10,
+        title: 'Rick and Morty App',
+        description: 'The Rick and Morty App is a site web where you can watch all series characters. Also, you can watch the information about each character, such as the character name, gender, status, and ID. This page was built with Next.js.',
+        src: imgRickAndMorty,
+        url:'https://rick-and-morty-henna-omega.vercel.app/',
+        urlCode: 'https://github.com/hahs-92/RickAndMorty',
+        tags: [ 'VERCEL', 'TS', 'API', 'GraphQL']
+    },
 
 ]
 
